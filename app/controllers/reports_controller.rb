@@ -6,12 +6,14 @@ class ReportsController < ApplicationController
   before_action :set_report, only: [:show, :edit, :update, :destroy]
   
   def index
-    @reports = current_user.reports
-
-    reports
-
-    render json: current_user.reports.to_a
+     render json: current_user.reports
     #render text: Report.to_csv(current_user.id)
+  end
+
+  def download_report
+    respond_to do |format|
+      format.json { render json: current_user.reports.to_a }
+    end
   end
 
   def download_reports
