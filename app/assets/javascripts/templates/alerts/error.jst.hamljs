@@ -1,0 +1,6 @@
+.alert.alert-danger.alert-dismissible{role:'alert'}
+  %button.close{type:'button', data-dismiss:'alert', arial-label:'Close'}
+    %span{aria-hidden:'true'} &times;
+  %strong Error
+  %br
+  = message

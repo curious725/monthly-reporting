@@ -1,0 +1,25 @@
+.form{role:'form'}
+  .form-group
+    .input-group
+      .input-group-addon First Name:
+      %input.form-control{name:'first_name', type:'text'}
+
+  .form-group
+    .input-group
+      .input-group-addon Last Name:
+      %input.form-control{name:'last_name', type:'text'}
+
+  .form-group
+    .input-group
+      .input-group-addon Email:
+      %input.form-control{name:'email', type:'text'}
+
+  .form-group
+    .input-group
+      .input-group-addon Date of Birth:
+      %input.form-control{name:'birth_date', type:'text'}
+
+  .form-group
+    .input-group
+      .input-group-addon Date of Employment:
+      %input.form-control{name:'employment_date', type:'text'}

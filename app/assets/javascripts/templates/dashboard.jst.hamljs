@@ -1,0 +1,11 @@
+.btn-group{data-toggle:'buttons'}
+  :each team in teams
+    %label.btn.btn-default.active
+      %input{type:'checkbox',name:'teams',value:team.attributes.id,checked:'checked'}
+      #{team.attributes.name}
+.my-requests
+.requests-to-approve
+.panel.panel-primary
+  .panel-heading Vacations Time Table
+  .panel-body.time-table-content
+  .panel-footer.legend

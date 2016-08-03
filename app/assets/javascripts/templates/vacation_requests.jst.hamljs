@@ -1,0 +1,9 @@
+:if highestPrivilege !== 'guest'
+  .panel.panel-primary
+    .panel-heading Request New Vacation
+    .panel-body
+      .new-vacation-request-form
+.panel.panel-primary
+  .panel-heading List of Vacations
+  .panel-body
+    .vacation-requests-list

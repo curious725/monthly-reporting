@@ -1,0 +1,3 @@
+.panel-heading =teamName
+  .buttons.pull-right
+.panel-body

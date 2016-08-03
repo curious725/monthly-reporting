@@ -1,0 +1,25 @@
+version: '2'
+services:
+  dev:
+    build: .
+    links:
+      - db
+    volumes:
+      - .:/usr/src/app
+    environment:
+      - RAILS_ENV=development
+
+  test:
+    build: .
+    volumes:
+      - .:/usr/src/app
+    links:
+      - db
+    environment:
+      - RAILS_ENV=test
+    command: [rspec]
+
+  db:
+    image: mysql:5.7.13
+    environment:
+      - MYSQL_ROOT_PASSWORD=password

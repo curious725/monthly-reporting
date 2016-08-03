@@ -1,0 +1,20 @@
+.panel.panel-primary
+  .panel-heading Holidays
+  .panel-body
+    .holidays
+      :if highestPrivilege === 'admin'
+        .form.form-inline.new{role:'form'}
+          .row
+            .col-md-6
+              %input.form-control{type:'text', name:'description', placeholder:'Holiday description', autofocus:true, style:'width:100%'}
+            .col-md-5
+              .input-group.input-daterange
+                %input.form-control{type:'text', name:'from', title:'Date of the holiday start'}
+                .input-group-addon to
+                %input.form-control{type:'text', name:'to',   title:'Date of the holiday end'}
+            .col-md-1
+              %button.btn.btn-default{name:'add'} Add
+        %hr
+      %ul.list-group
+  .panel-footer
+    %a{href:'http://www.timeanddate.com/holidays/ukraine/'} Holidays in Ukraine

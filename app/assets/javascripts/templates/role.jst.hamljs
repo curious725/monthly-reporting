@@ -1,0 +1,2 @@
+%input{type:'checkbox',name:'roles',data-user-id:userID,value:roleName}
+#{roleName}

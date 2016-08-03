@@ -1,0 +1,4 @@
+.panel.panel-primary
+  .panel-heading My Requests
+  .panel-body
+    %table.table.table-condensed

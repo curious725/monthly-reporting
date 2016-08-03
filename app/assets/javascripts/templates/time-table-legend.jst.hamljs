@@ -1,0 +1,45 @@
+%table
+  %thead
+    %th{colspan:3} planned
+    %th{colspan:3} sickness
+    %th{colspan:3} unpaid
+  %tr
+    %td.description requested
+    %td.planned.requested &nbsp;
+    %td.planned.requested &nbsp;
+    %td.description requested
+    %td.sickness.requested &nbsp;
+    %td.sickness.requested &nbsp;
+    %td.description requested
+    %td.unpaid.requested &nbsp;
+    %td.unpaid.requested &nbsp;
+  %tr
+    %td.description accepted
+    %td.planned.accepted &nbsp;
+    %td.planned.accepted &nbsp;
+    %td.description accepted
+    %td.sickness.accepted &nbsp;
+    %td.sickness.accepted &nbsp;
+    %td.description accepted
+    %td.unpaid.accepted &nbsp;
+    %td.unpaid.accepted &nbsp;
+  %tr
+    %td.description inprogress
+    %td.planned.inprogress &nbsp;
+    %td.planned.inprogress &nbsp;
+    %td.description inprogress
+    %td.sickness.inprogress &nbsp;
+    %td.sickness.inprogress &nbsp;
+    %td.description inprogress
+    %td.unpaid.inprogress &nbsp;
+    %td.unpaid.inprogress &nbsp;
+  %tr
+    %td.description used
+    %td.planned.used &nbsp;
+    %td.planned.used &nbsp;
+    %td.description used
+    %td.sickness.used &nbsp;
+    %td.sickness.used &nbsp;
+    %td.description used
+    %td.unpaid.used &nbsp;
+    %td.unpaid.used &nbsp;

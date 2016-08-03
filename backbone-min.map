@@ -1,0 +1,935 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    
+    
+    <title>backbone/backbone-min.map at master · jashkenas/backbone</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="jashkenas/backbone" name="twitter:title" /><meta content="backbone - Give your JS App some Backbone with Models, Views, Collections, and Events" name="twitter:description" /><meta content="https://avatars1.githubusercontent.com/u/4732?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars1.githubusercontent.com/u/4732?v=3&amp;s=400" property="og:image" /><meta content="jashkenas/backbone" property="og:title" /><meta content="https://github.com/jashkenas/backbone" property="og:url" /><meta content="backbone - Give your JS App some Backbone with Models, Views, Collections, and Events" property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    <link rel="web-socket" href="wss://live.github.com/_sockets/NTQwODMyOjQ3ZjBiOGRmNzU1MjBhMzFhZWE3Mzg1ZTY1OTM3M2Y2OmQ3ZmNkM2ZmNzRjMzQ0NDE4YTA5ZTFjN2VhMTg3MjRiZTc5NmFkNWEyYTc2ZGI0ZGM2N2NkOGM1YjM0ZDNlNjU=--bf04cc31f9a751a51353fba55f9ba18a513c1afc">
+    <meta name="pjax-timeout" content="1000">
+    <link rel="sudo-modal" href="/sessions/sudo_modal">
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_source" data-pjax-transient>
+      <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="2537223E:7041:B289C8D:556591D8" name="octolytics-dimension-request_id" /><meta content="540832" name="octolytics-actor-id" /><meta content="eleidan" name="octolytics-actor-login" /><meta content="713dc11d66d1680e3c551b47307141f97ac0a7954fce708c1bc6925eebd1668c" name="octolytics-actor-hash" />
+    
+    <meta content="Rails, view, blob#show" name="analytics-event" />
+    <meta class="js-ga-set" name="dimension1" content="Logged In">
+    <meta class="js-ga-set" name="dimension2" content="Header v3">
+    <meta name="is-dotcom" content="true">
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="eleidan">
+
+    
+    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="fyyeN8huk6dtrTnDr4A3IQX5NWi1LlPf1YfXifFjN9ukQ5yrtpq4XQHM92rMVRXJFeIjnB/gMBQHvxxYYr6u6w==" name="csrf-token" />
+
+    <link href="https://assets-cdn.github.com/assets/github/index-ec65947a6982ef44ed5617dac5e84463c4b1520f11fdce5e40c3f83efe723ba9.css" media="all" rel="stylesheet" />
+    <link href="https://assets-cdn.github.com/assets/github2/index-c5149bf7e222dafecb101f3604763d9f7bdb5286882c24bb7668f1e4a53c20b3.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="597198fd75ff583652b7a1a64940d319">
+
+      
+  <meta name="description" content="backbone - Give your JS App some Backbone with Models, Views, Collections, and Events">
+  <meta name="go-import" content="github.com/jashkenas/backbone git https://github.com/jashkenas/backbone.git">
+
+  <meta content="4732" name="octolytics-dimension-user_id" /><meta content="jashkenas" name="octolytics-dimension-user_login" /><meta content="952189" name="octolytics-dimension-repository_id" /><meta content="jashkenas/backbone" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="952189" name="octolytics-dimension-repository_network_root_id" /><meta content="jashkenas/backbone" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/jashkenas/backbone/commits/master.atom" rel="alternate" title="Recent Commits to backbone:master" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_in  env-production linux vis-public page-blob">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+        <div class="header header-logged-in true" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-invertocat" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+  <span class="mega-octicon octicon-mark-github"></span>
+</a>
+
+
+      <div class="site-search repo-scope js-site-search" role="search">
+          <form accept-charset="UTF-8" action="/jashkenas/backbone/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/jashkenas/backbone/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+      </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item explore">
+            <a class="header-nav-link" href="/explore" data-ga-click="Header, go to explore, text:explore">Explore</a>
+          </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="https://gist.github.com" data-ga-click="Header, go to gist, text:gist">Gist</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="/blog" data-ga-click="Header, go to blog, text:blog">Blog</a>
+            </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://help.github.com" data-ga-click="Header, go to help, text:help">Help</a>
+          </li>
+      </ul>
+
+      
+<ul class="header-nav user-nav right" id="user-links">
+  <li class="header-nav-item dropdown js-menu-container">
+    <a class="header-nav-link name" href="/eleidan" data-ga-click="Header, go to profile, text:username">
+      <img alt="@eleidan" class="avatar" data-user="540832" height="20" src="https://avatars2.githubusercontent.com/u/540832?v=3&amp;s=40" width="20" />
+      <span class="css-truncate">
+        <span class="css-truncate-target">eleidan</span>
+      </span>
+    </a>
+  </li>
+
+  <li class="header-nav-item dropdown js-menu-container">
+    <a class="header-nav-link js-menu-target tooltipped tooltipped-s" href="/new" aria-label="Create new..." data-ga-click="Header, create new, icon:add">
+      <span class="octicon octicon-plus"></span>
+      <span class="dropdown-caret"></span>
+    </a>
+
+    <div class="dropdown-menu-content js-menu-content">
+      <ul class="dropdown-menu">
+        
+<li>
+  <a href="/new" data-ga-click="Header, create new repository, icon:repo"><span class="octicon octicon-repo"></span> New repository</a>
+</li>
+<li>
+  <a href="/organizations/new" data-ga-click="Header, create new organization, icon:organization"><span class="octicon octicon-organization"></span> New organization</a>
+</li>
+
+
+  <li class="dropdown-divider"></li>
+  <li class="dropdown-header">
+    <span title="jashkenas/backbone">This repository</span>
+  </li>
+    <li>
+      <a href="/jashkenas/backbone/issues/new" data-ga-click="Header, create new issue, icon:issue"><span class="octicon octicon-issue-opened"></span> New issue</a>
+    </li>
+
+      </ul>
+    </div>
+  </li>
+
+  <li class="header-nav-item">
+      <span class="js-socket-channel js-updatable-content"
+        data-channel="notification-changed:eleidan"
+        data-url="/notifications/header">
+      <a href="/notifications" aria-label="You have no unread notifications" class="header-nav-link notification-indicator tooltipped tooltipped-s" data-ga-click="Header, go to notifications, icon:read" data-hotkey="g n">
+          <span class="mail-status all-read"></span>
+          <span class="octicon octicon-inbox"></span>
+</a>  </span>
+
+  </li>
+
+  <li class="header-nav-item">
+    <a class="header-nav-link tooltipped tooltipped-s" href="/settings/profile" id="account_settings" aria-label="Settings" data-ga-click="Header, go to settings, icon:settings">
+      <span class="octicon octicon-gear"></span>
+    </a>
+  </li>
+
+  <li class="header-nav-item">
+    <form accept-charset="UTF-8" action="/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="VkfmKEhXvfa8vona2khK0bD6FBaWY4ZXWn7xI6yq82QZSQO1MkP8/WXFuDo8TQYtnX0a91G9mIeNwiPTWQKgqQ==" /></div>
+      <button class="header-nav-link sign-out-button tooltipped tooltipped-s" aria-label="Sign out" data-ga-click="Header, sign out, icon:logout">
+        <span class="octicon octicon-sign-out"></span>
+      </button>
+</form>  </li>
+
+</ul>
+
+
+
+    
+  </div>
+</div>
+
+        
+
+        
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+        
+<ul class="pagehead-actions">
+
+  <li>
+      <form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="w3uzVJFqaT8jN6Ms2C4oDdacwtBno6M6Bd2qPcFmj//dPTlKiRi8yORMHkdQINP5+VbFXCXh2i3e8P2tXK5WFQ==" /></div>    <input id="repository_id" name="repository_id" type="hidden" value="952189" />
+
+      <div class="select-menu js-menu-container js-select-menu">
+        <a href="/jashkenas/backbone/subscription"
+          class="btn btn-sm btn-with-count select-menu-button js-menu-target" role="button" tabindex="0" aria-haspopup="true"
+          data-ga-click="Repository, click Watch settings, action:blob#show">
+          <span class="js-select-button">
+            <span class="octicon octicon-eye"></span>
+            Watch
+          </span>
+        </a>
+        <a class="social-count js-social-count" href="/jashkenas/backbone/watchers">
+          1,606
+        </a>
+
+        <div class="select-menu-modal-holder">
+          <div class="select-menu-modal subscription-menu-modal js-menu-content" aria-hidden="true">
+            <div class="select-menu-header">
+              <span class="select-menu-title">Notifications</span>
+              <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
+            </div>
+
+            <div class="select-menu-list js-navigation-container" role="menu">
+
+              <div class="select-menu-item js-navigation-item selected" role="menuitem" tabindex="0">
+                <span class="select-menu-item-icon octicon octicon-check"></span>
+                <div class="select-menu-item-text">
+                  <input checked="checked" id="do_included" name="do" type="radio" value="included" />
+                  <span class="select-menu-item-heading">Not watching</span>
+                  <span class="description">Be notified when participating or @mentioned.</span>
+                  <span class="js-select-button-text hidden-select-button-text">
+                    <span class="octicon octicon-eye"></span>
+                    Watch
+                  </span>
+                </div>
+              </div>
+
+              <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                <span class="select-menu-item-icon octicon octicon octicon-check"></span>
+                <div class="select-menu-item-text">
+                  <input id="do_subscribed" name="do" type="radio" value="subscribed" />
+                  <span class="select-menu-item-heading">Watching</span>
+                  <span class="description">Be notified of all conversations.</span>
+                  <span class="js-select-button-text hidden-select-button-text">
+                    <span class="octicon octicon-eye"></span>
+                    Unwatch
+                  </span>
+                </div>
+              </div>
+
+              <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                <span class="select-menu-item-icon octicon octicon-check"></span>
+                <div class="select-menu-item-text">
+                  <input id="do_ignore" name="do" type="radio" value="ignore" />
+                  <span class="select-menu-item-heading">Ignoring</span>
+                  <span class="description">Never be notified.</span>
+                  <span class="js-select-button-text hidden-select-button-text">
+                    <span class="octicon octicon-mute"></span>
+                    Stop ignoring
+                  </span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+</form>
+  </li>
+
+  <li>
+    
+  <div class="js-toggler-container js-social-container starring-container ">
+
+    <form accept-charset="UTF-8" action="/jashkenas/backbone/unstar" class="js-toggler-form starred js-unstar-button" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="nNi2q99+GrrjKdtxarJAAkB3CHs7sujdagR5vWB+RNLITMUHa65AMHL3kWG9l7pdbSdXkLoVmIdNdN+UVbce5g==" /></div>
+      <button
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Unstar this repository" title="Unstar jashkenas/backbone"
+        data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">
+        <span class="octicon octicon-star"></span>
+        Unstar
+      </button>
+        <a class="social-count js-social-count" href="/jashkenas/backbone/stargazers">
+          21,924
+        </a>
+</form>
+    <form accept-charset="UTF-8" action="/jashkenas/backbone/star" class="js-toggler-form unstarred js-star-button" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="GmNkDzX5oz75IcPyq6YxCQi8k6PIDj7lnFOpRd+ly4gTWpqdxczRQ7UBIbAx2mMl0kB2Xdwm+3n+4HF8M7Ep/A==" /></div>
+      <button
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Star this repository" title="Star jashkenas/backbone"
+        data-ga-click="Repository, click star button, action:blob#show; text:Star">
+        <span class="octicon octicon-star"></span>
+        Star
+      </button>
+        <a class="social-count js-social-count" href="/jashkenas/backbone/stargazers">
+          21,924
+        </a>
+</form>  </div>
+
+  </li>
+
+        <li>
+          <a href="#fork-destination-box" class="btn btn-sm btn-with-count"
+              title="Fork your own copy of jashkenas/backbone to your account"
+              aria-label="Fork your own copy of jashkenas/backbone to your account"
+              rel="facebox"
+              data-ga-click="Repository, show fork modal, action:blob#show; text:Fork">
+            <span class="octicon octicon-repo-forked"></span>
+            Fork
+          </a>
+          <a href="/jashkenas/backbone/network" class="social-count">4,891</a>
+
+          <div id="fork-destination-box" style="display: none;">
+            <h2 class="facebox-header">Where should we fork this repository?</h2>
+            <include-fragment src=""
+                class="js-fork-select-fragment fork-select-fragment"
+                data-url="/jashkenas/backbone/fork?fragment=1">
+              <img alt="Loading" height="64" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-128-338974454bb5c32803e82f601beb051d373744b024fe8742a76009700fd7e033.gif" width="64" />
+            </include-fragment>
+          </div>
+        </li>
+
+</ul>
+
+        <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
+          <span class="mega-octicon octicon-repo"></span>
+          <span class="author"><a href="/jashkenas" class="url fn" itemprop="url" rel="author"><span itemprop="title">jashkenas</span></a></span><!--
+       --><span class="path-divider">/</span><!--
+       --><strong><a href="/jashkenas/backbone" class="js-current-repository" data-pjax="#js-repo-pjax-container">backbone</a></strong>
+
+          <span class="page-context-loader">
+            <img alt="" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </span>
+
+        </h1>
+      </div><!-- /.container -->
+    </div><!-- /.repohead -->
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline  ">
+        <div class="repository-sidebar clearfix">
+            
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/jashkenas/backbone/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/jashkenas/backbone" aria-label="Code" class="selected js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /jashkenas/backbone">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/jashkenas/backbone/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /jashkenas/backbone/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/jashkenas/backbone/pulls" aria-label="Pull requests" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /jashkenas/backbone/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Wiki">
+        <a href="/jashkenas/backbone/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g w" data-selected-links="repo_wiki /jashkenas/backbone/wiki">
+          <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>      </li>
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/jashkenas/backbone/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /jashkenas/backbone/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/jashkenas/backbone/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /jashkenas/backbone/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+              <div class="only-with-full-nav">
+                  
+<div class="clone-url open"
+  data-protocol-type="http"
+  data-url="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/jashkenas/backbone.git" readonly="readonly">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="clone-url "
+  data-protocol-type="ssh"
+  data-url="/users/set_protocol?protocol_selector=ssh&amp;protocol_type=clone">
+  <h3><span class="text-emphasized">SSH</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="git@github.com:jashkenas/backbone.git" readonly="readonly">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="clone-url "
+  data-protocol-type="subversion"
+  data-url="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/jashkenas/backbone" readonly="readonly">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+<p class="clone-options">You can clone with
+  <a href="#" class="js-clone-selector" data-protocol="http">HTTPS</a>, <a href="#" class="js-clone-selector" data-protocol="ssh">SSH</a>, or <a href="#" class="js-clone-selector" data-protocol="subversion">Subversion</a>.
+  <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+    <span class="octicon octicon-question"></span>
+  </a>
+</p>
+
+
+
+
+                <a href="/jashkenas/backbone/archive/master.zip"
+                   class="btn btn-sm sidebar-button"
+                   aria-label="Download the contents of jashkenas/backbone as a zip file"
+                   title="Download the contents of jashkenas/backbone as a zip file"
+                   rel="nofollow">
+                  <span class="octicon octicon-cloud-download"></span>
+                  Download ZIP
+                </a>
+              </div>
+        </div><!-- /.repository-sidebar -->
+
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          
+
+<a href="/jashkenas/backbone/blob/7bf2d68c04d1ee1ae322af71bb6e6ae999153711/backbone-min.map" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+<!-- blob contrib key: blob_contributors:v21:d792d2c1881aeda76c749da0f17d99b6 -->
+
+<div class="file-navigation js-zeroclipboard-container">
+  
+<div class="select-menu js-menu-container js-select-menu left">
+  <span class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    data-master-branch="master"
+    data-ref="master"
+    title="master"
+    role="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <span class="octicon octicon-git-branch"></span>
+    <i>branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </span>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="select-menu-title">Switch branches/tags</span>
+        <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/jashkenas/backbone/blob/gh-pages/backbone-min.map"
+               data-name="gh-pages"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="gh-pages">
+                gh-pages
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/jashkenas/backbone/blob/master/backbone-min.map"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="master">
+                master
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/jashkenas/backbone/blob/sauce/backbone-min.map"
+               data-name="sauce"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="sauce">
+                sauce
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jashkenas/backbone/tree/1.2.0/backbone-min.map"
+                 data-name="1.2.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="1.2.0">1.2.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jashkenas/backbone/tree/1.1.2/backbone-min.map"
+                 data-name="1.1.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="1.1.2">1.1.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jashkenas/backbone/tree/1.1.1/backbone-min.map"
+                 data-name="1.1.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="1.1.1">1.1.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jashkenas/backbone/tree/1.1.0/backbone-min.map"
+                 data-name="1.1.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="1.1.0">1.1.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jashkenas/backbone/tree/1.0.0/backbone-min.map"
+                 data-name="1.0.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="1.0.0">1.0.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jashkenas/backbone/tree/0.9.10/backbone-min.map"
+                 data-name="0.9.10"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="0.9.10">0.9.10</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jashkenas/backbone/tree/0.9.9/backbone-min.map"
+                 data-name="0.9.9"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="0.9.9">0.9.9</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jashkenas/backbone/tree/0.9.2/backbone-min.map"
+                 data-name="0.9.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="0.9.2">0.9.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jashkenas/backbone/tree/0.9.1/backbone-min.map"
+                 data-name="0.9.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="0.9.1">0.9.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jashkenas/backbone/tree/0.9.0/backbone-min.map"
+                 data-name="0.9.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="0.9.0">0.9.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jashkenas/backbone/tree/0.5.3/backbone-min.map"
+                 data-name="0.5.3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="0.5.3">0.5.3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jashkenas/backbone/tree/0.5.2/backbone-min.map"
+                 data-name="0.5.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="0.5.2">0.5.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jashkenas/backbone/tree/0.5.1/backbone-min.map"
+                 data-name="0.5.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="0.5.1">0.5.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jashkenas/backbone/tree/0.5.0/backbone-min.map"
+                 data-name="0.5.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="0.5.0">0.5.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jashkenas/backbone/tree/0.3.3/backbone-min.map"
+                 data-name="0.3.3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="0.3.3">0.3.3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jashkenas/backbone/tree/0.3.2/backbone-min.map"
+                 data-name="0.3.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="0.3.2">0.3.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jashkenas/backbone/tree/0.3.1/backbone-min.map"
+                 data-name="0.3.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="0.3.1">0.3.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jashkenas/backbone/tree/0.3.0/backbone-min.map"
+                 data-name="0.3.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="0.3.0">0.3.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jashkenas/backbone/tree/0.2.0/backbone-min.map"
+                 data-name="0.2.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="0.2.0">0.2.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jashkenas/backbone/tree/0.1.2/backbone-min.map"
+                 data-name="0.1.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="0.1.2">0.1.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jashkenas/backbone/tree/0.1.1/backbone-min.map"
+                 data-name="0.1.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="0.1.1">0.1.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jashkenas/backbone/tree/0.1.0/backbone-min.map"
+                 data-name="0.1.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="0.1.0">0.1.0</a>
+            </div>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <div class="btn-group right">
+    <a href="/jashkenas/backbone/find/master"
+          class="js-show-file-finder btn btn-sm empty-icon tooltipped tooltipped-s"
+          data-pjax
+          data-hotkey="t"
+          aria-label="Quickly jump between files">
+      <span class="octicon octicon-list-unordered"></span>
+    </a>
+    <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+  </div>
+
+  <div class="breadcrumb js-zeroclipboard-target">
+    <span class='repo-root js-repo-root'><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/jashkenas/backbone" class="" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">backbone</span></a></span></span><span class="separator">/</span><strong class="final-path">backbone-min.map</strong>
+  </div>
+</div>
+
+
+  <div class="commit file-history-tease">
+    <div class="file-history-tease-header">
+        <img alt="@jashkenas" class="avatar" data-user="4732" height="24" src="https://avatars0.githubusercontent.com/u/4732?v=3&amp;s=48" width="24" />
+        <span class="author"><a href="/jashkenas" rel="author">jashkenas</a></span>
+        <time datetime="2015-05-13T22:05:59Z" is="relative-time">May 13, 2015</time>
+        <div class="commit-title">
+            <a href="/jashkenas/backbone/commit/6541698ff67eaf0a9baf9121cbd22d0f0e90e7b6" class="message" data-pjax="true" title="Backbone.js 1.2.0 (I think)">Backbone.js 1.2.0 (I think)</a>
+        </div>
+    </div>
+
+    <div class="participation">
+      <p class="quickstat">
+        <a href="#blob_contributors_box" rel="facebox">
+          <strong>2</strong>
+           contributors
+        </a>
+      </p>
+          <a class="avatar-link tooltipped tooltipped-s" aria-label="jashkenas" href="/jashkenas/backbone/commits/master/backbone-min.map?author=jashkenas"><img alt="@jashkenas" class="avatar" data-user="4732" height="20" src="https://avatars2.githubusercontent.com/u/4732?v=3&amp;s=40" width="20" /> </a>
+    <a class="avatar-link tooltipped tooltipped-s" aria-label="akre54" href="/jashkenas/backbone/commits/master/backbone-min.map?author=akre54"><img alt="@akre54" class="avatar" data-user="931368" height="20" src="https://avatars2.githubusercontent.com/u/931368?v=3&amp;s=40" width="20" /> </a>
+
+
+    </div>
+    <div id="blob_contributors_box" style="display:none">
+      <h2 class="facebox-header">Users who have contributed to this file</h2>
+      <ul class="facebox-user-list">
+          <li class="facebox-user-list-item">
+            <img alt="@jashkenas" data-user="4732" height="24" src="https://avatars0.githubusercontent.com/u/4732?v=3&amp;s=48" width="24" />
+            <a href="/jashkenas">jashkenas</a>
+          </li>
+          <li class="facebox-user-list-item">
+            <img alt="@akre54" data-user="931368" height="24" src="https://avatars0.githubusercontent.com/u/931368?v=3&amp;s=48" width="24" />
+            <a href="/akre54">akre54</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+<div class="file">
+  <div class="file-header">
+    <div class="file-actions">
+
+      <div class="btn-group">
+        <a href="/jashkenas/backbone/raw/master/backbone-min.map" class="btn btn-sm " id="raw-url">Raw</a>
+          <a href="/jashkenas/backbone/blame/master/backbone-min.map" class="btn btn-sm js-update-url-with-hash">Blame</a>
+        <a href="/jashkenas/backbone/commits/master/backbone-min.map" class="btn btn-sm " rel="nofollow">History</a>
+      </div>
+
+
+            <form accept-charset="UTF-8" action="/jashkenas/backbone/edit/master/backbone-min.map" class="inline-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="sPEei6I9EzyY030qO6qwwh0SxfTNCukrD0wnlu3pA/bmMYYSrchcBJC/Vjxa5wwKooTkH4MuCMQUQHHgiLqV5A==" /></div>
+              <button class="octicon-btn tooltipped tooltipped-n" type="submit" aria-label="Fork this project and edit the file" data-hotkey="e" data-disable-with>
+                <span class="octicon octicon-pencil"></span>
+              </button>
+</form>
+          <form accept-charset="UTF-8" action="/jashkenas/backbone/delete/master/backbone-min.map" class="inline-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="P+vtA3PufCke9fUAZfOEVjjjmvlPTYDgWPWaF/JDEZJpsV2l1E+RSTy1OiDQSnERjRdyWK17ilQFPCcqDdKVOA==" /></div>
+            <button class="octicon-btn octicon-btn-danger tooltipped tooltipped-n" type="submit" aria-label="Fork this project and delete this file" data-disable-with>
+              <span class="octicon octicon-trashcan"></span>
+            </button>
+</form>    </div>
+
+    <div class="file-info">
+        1 lines (1 sloc)
+        <span class="file-info-divider"></span>
+      33.111 kb
+    </div>
+  </div>
+  
+  <div class="blob-wrapper data type-text">
+      <table class="highlight tab-size-8 js-file-line-container">
+      <tr>
+        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="LC1" class="blob-code blob-code-inner js-file-line">{&quot;version&quot;:3,&quot;file&quot;:&quot;backbone-min.js&quot;,&quot;sources&quot;:[&quot;backbone.js&quot;],&quot;names&quot;:[&quot;factory&quot;,&quot;root&quot;,&quot;self&quot;,&quot;global&quot;,&quot;define&quot;,&quot;amd&quot;,&quot;_&quot;,&quot;$&quot;,&quot;exports&quot;,&quot;Backbone&quot;,&quot;require&quot;,&quot;e&quot;,&quot;jQuery&quot;,&quot;Zepto&quot;,&quot;ender&quot;,&quot;previousBackbone&quot;,&quot;array&quot;,&quot;slice&quot;,&quot;VERSION&quot;,&quot;noConflict&quot;,&quot;this&quot;,&quot;emulateHTTP&quot;,&quot;emulateJSON&quot;,&quot;Events&quot;,&quot;eventSplitter&quot;,&quot;eventsApi&quot;,&quot;iteratee&quot;,&quot;memo&quot;,&quot;name&quot;,&quot;callback&quot;,&quot;opts&quot;,&quot;i&quot;,&quot;names&quot;,&quot;keys&quot;,&quot;length&quot;,&quot;test&quot;,&quot;split&quot;,&quot;on&quot;,&quot;context&quot;,&quot;internalOn&quot;,&quot;obj&quot;,&quot;listening&quot;,&quot;_events&quot;,&quot;onApi&quot;,&quot;ctx&quot;,&quot;listeners&quot;,&quot;_listeners&quot;,&quot;id&quot;,&quot;listenTo&quot;,&quot;_listenId&quot;,&quot;uniqueId&quot;,&quot;listeningTo&quot;,&quot;_listeningTo&quot;,&quot;thisId&quot;,&quot;objId&quot;,&quot;count&quot;,&quot;events&quot;,&quot;options&quot;,&quot;handlers&quot;,&quot;push&quot;,&quot;off&quot;,&quot;offApi&quot;,&quot;stopListening&quot;,&quot;ids&quot;,&quot;isEmpty&quot;,&quot;remaining&quot;,&quot;j&quot;,&quot;handler&quot;,&quot;_callback&quot;,&quot;size&quot;,&quot;once&quot;,&quot;onceMap&quot;,&quot;bind&quot;,&quot;listenToOnce&quot;,&quot;map&quot;,&quot;offer&quot;,&quot;apply&quot;,&quot;arguments&quot;,&quot;trigger&quot;,&quot;Math&quot;,&quot;max&quot;,&quot;args&quot;,&quot;Array&quot;,&quot;triggerApi&quot;,&quot;objEvents&quot;,&quot;cb&quot;,&quot;allEvents&quot;,&quot;all&quot;,&quot;triggerEvents&quot;,&quot;concat&quot;,&quot;ev&quot;,&quot;l&quot;,&quot;a1&quot;,&quot;a2&quot;,&quot;a3&quot;,&quot;call&quot;,&quot;addMethod&quot;,&quot;method&quot;,&quot;attribute&quot;,&quot;value&quot;,&quot;defaultVal&quot;,&quot;unshift&quot;,&quot;addUnderscoreMethods&quot;,&quot;Class&quot;,&quot;methods&quot;,&quot;each&quot;,&quot;prototype&quot;,&quot;unbind&quot;,&quot;extend&quot;,&quot;Model&quot;,&quot;attributes&quot;,&quot;attrs&quot;,&quot;cid&quot;,&quot;cidPrefix&quot;,&quot;collection&quot;,&quot;parse&quot;,&quot;defaults&quot;,&quot;result&quot;,&quot;set&quot;,&quot;changed&quot;,&quot;initialize&quot;,&quot;validationError&quot;,&quot;idAttribute&quot;,&quot;toJSON&quot;,&quot;clone&quot;,&quot;sync&quot;,&quot;get&quot;,&quot;attr&quot;,&quot;escape&quot;,&quot;has&quot;,&quot;matches&quot;,&quot;key&quot;,&quot;val&quot;,&quot;unset&quot;,&quot;changes&quot;,&quot;silent&quot;,&quot;changing&quot;,&quot;prev&quot;,&quot;current&quot;,&quot;_validate&quot;,&quot;_changing&quot;,&quot;_previousAttributes&quot;,&quot;isEqual&quot;,&quot;_pending&quot;,&quot;clear&quot;,&quot;hasChanged&quot;,&quot;changedAttributes&quot;,&quot;diff&quot;,&quot;old&quot;,&quot;previous&quot;,&quot;previousAttributes&quot;,&quot;fetch&quot;,&quot;model&quot;,&quot;success&quot;,&quot;resp&quot;,&quot;wrapError&quot;,&quot;save&quot;,&quot;xhr&quot;,&quot;wait&quot;,&quot;validate&quot;,&quot;serverAttrs&quot;,&quot;isObject&quot;,&quot;isNew&quot;,&quot;patch&quot;,&quot;destroy&quot;,&quot;defer&quot;,&quot;url&quot;,&quot;base&quot;,&quot;urlError&quot;,&quot;replace&quot;,&quot;encodeURIComponent&quot;,&quot;constructor&quot;,&quot;isValid&quot;,&quot;error&quot;,&quot;modelMethods&quot;,&quot;values&quot;,&quot;pairs&quot;,&quot;invert&quot;,&quot;pick&quot;,&quot;omit&quot;,&quot;chain&quot;,&quot;Collection&quot;,&quot;models&quot;,&quot;comparator&quot;,&quot;_reset&quot;,&quot;reset&quot;,&quot;setOptions&quot;,&quot;add&quot;,&quot;remove&quot;,&quot;merge&quot;,&quot;addOptions&quot;,&quot;singular&quot;,&quot;isArray&quot;,&quot;removed&quot;,&quot;_removeModels&quot;,&quot;existing&quot;,&quot;sort&quot;,&quot;at&quot;,&quot;sortable&quot;,&quot;sortAttr&quot;,&quot;isString&quot;,&quot;toAdd&quot;,&quot;toRemove&quot;,&quot;modelMap&quot;,&quot;order&quot;,&quot;orderChanged&quot;,&quot;_isModel&quot;,&quot;_prepareModel&quot;,&quot;_addReference&quot;,&quot;modelId&quot;,&quot;splice&quot;,&quot;orderedModels&quot;,&quot;addOpts&quot;,&quot;index&quot;,&quot;_removeReference&quot;,&quot;previousModels&quot;,&quot;pop&quot;,&quot;shift&quot;,&quot;_byId&quot;,&quot;where&quot;,&quot;first&quot;,&quot;findWhere&quot;,&quot;Error&quot;,&quot;sortBy&quot;,&quot;pluck&quot;,&quot;invoke&quot;,&quot;create&quot;,&quot;callbackOpts&quot;,&quot;indexOf&quot;,&quot;_onModelEvent&quot;,&quot;event&quot;,&quot;prevId&quot;,&quot;collectionMethods&quot;,&quot;forEach&quot;,&quot;collect&quot;,&quot;reduce&quot;,&quot;foldl&quot;,&quot;inject&quot;,&quot;reduceRight&quot;,&quot;foldr&quot;,&quot;find&quot;,&quot;detect&quot;,&quot;filter&quot;,&quot;select&quot;,&quot;reject&quot;,&quot;every&quot;,&quot;some&quot;,&quot;any&quot;,&quot;include&quot;,&quot;contains&quot;,&quot;min&quot;,&quot;toArray&quot;,&quot;head&quot;,&quot;take&quot;,&quot;initial&quot;,&quot;rest&quot;,&quot;tail&quot;,&quot;drop&quot;,&quot;last&quot;,&quot;without&quot;,&quot;difference&quot;,&quot;shuffle&quot;,&quot;lastIndexOf&quot;,&quot;sample&quot;,&quot;partition&quot;,&quot;attributeMethods&quot;,&quot;iterator&quot;,&quot;isFunction&quot;,&quot;View&quot;,&quot;viewOptions&quot;,&quot;_ensureElement&quot;,&quot;delegateEventSplitter&quot;,&quot;tagName&quot;,&quot;selector&quot;,&quot;$el&quot;,&quot;render&quot;,&quot;_removeElement&quot;,&quot;setElement&quot;,&quot;element&quot;,&quot;undelegateEvents&quot;,&quot;_setElement&quot;,&quot;delegateEvents&quot;,&quot;el&quot;,&quot;match&quot;,&quot;delegate&quot;,&quot;eventName&quot;,&quot;listener&quot;,&quot;undelegate&quot;,&quot;_createElement&quot;,&quot;document&quot;,&quot;createElement&quot;,&quot;className&quot;,&quot;_setAttributes&quot;,&quot;type&quot;,&quot;methodMap&quot;,&quot;params&quot;,&quot;dataType&quot;,&quot;data&quot;,&quot;contentType&quot;,&quot;JSON&quot;,&quot;stringify&quot;,&quot;_method&quot;,&quot;beforeSend&quot;,&quot;setRequestHeader&quot;,&quot;processData&quot;,&quot;textStatus&quot;,&quot;errorThrown&quot;,&quot;ajax&quot;,&quot;update&quot;,&quot;delete&quot;,&quot;read&quot;,&quot;Router&quot;,&quot;routes&quot;,&quot;_bindRoutes&quot;,&quot;optionalParam&quot;,&quot;namedParam&quot;,&quot;splatParam&quot;,&quot;escapeRegExp&quot;,&quot;route&quot;,&quot;isRegExp&quot;,&quot;_routeToRegExp&quot;,&quot;router&quot;,&quot;history&quot;,&quot;fragment&quot;,&quot;_extractParameters&quot;,&quot;execute&quot;,&quot;navigate&quot;,&quot;optional&quot;,&quot;RegExp&quot;,&quot;exec&quot;,&quot;param&quot;,&quot;decodeURIComponent&quot;,&quot;History&quot;,&quot;bindAll&quot;,&quot;window&quot;,&quot;location&quot;,&quot;routeStripper&quot;,&quot;rootStripper&quot;,&quot;pathStripper&quot;,&quot;started&quot;,&quot;interval&quot;,&quot;atRoot&quot;,&quot;path&quot;,&quot;pathname&quot;,&quot;getSearch&quot;,&quot;matchRoot&quot;,&quot;decodeFragment&quot;,&quot;decodeURI&quot;,&quot;href&quot;,&quot;getHash&quot;,&quot;getPath&quot;,&quot;charAt&quot;,&quot;getFragment&quot;,&quot;_usePushState&quot;,&quot;_wantsHashChange&quot;,&quot;start&quot;,&quot;hashChange&quot;,&quot;_hasHashChange&quot;,&quot;_useHashChange&quot;,&quot;_wantsPushState&quot;,&quot;pushState&quot;,&quot;_hasPushState&quot;,&quot;iframe&quot;,&quot;src&quot;,&quot;style&quot;,&quot;display&quot;,&quot;tabIndex&quot;,&quot;body&quot;,&quot;insertBefore&quot;,&quot;firstChild&quot;,&quot;contentWindow&quot;,&quot;open&quot;,&quot;close&quot;,&quot;hash&quot;,&quot;addEventListener&quot;,&quot;attachEvent&quot;,&quot;checkUrl&quot;,&quot;_checkUrlInterval&quot;,&quot;setInterval&quot;,&quot;loadUrl&quot;,&quot;stop&quot;,&quot;removeEventListener&quot;,&quot;detachEvent&quot;,&quot;removeChild&quot;,&quot;frameElement&quot;,&quot;clearInterval&quot;,&quot;title&quot;,&quot;_updateHash&quot;,&quot;assign&quot;,&quot;protoProps&quot;,&quot;staticProps&quot;,&quot;parent&quot;,&quot;child&quot;,&quot;Surrogate&quot;,&quot;__super__&quot;],&quot;mappings&quot;:&quot;CAOC,SAASA,GAIR,GAAIC,SAAeC,OAAQ,UAAYA,KAAKA,MAAQA,MAAQA,YAC1CC,SAAU,UAAYA,OAAOA,QAAUA,QAAUA,MAGnE,UAAWC,UAAW,YAAcA,OAAOC,IAAK,CAC9CD,QAAQ,aAAc,SAAU,WAAY,SAASE,EAAGC,EAAGC,GAGzDP,EAAKQ,SAAWT,EAAQC,EAAMO,EAASF,EAAGC,SAIvC,UAAWC,WAAY,YAAa,CACzC,GAAIF,GAAII,QAAQ,cAAeH,CAC/B,KAAMA,EAAIG,QAAQ,UAAa,MAAMC,IACrCX,EAAQC,EAAMO,QAASF,EAAGC,OAGrB,CACLN,EAAKQ,SAAWT,EAAQC,KAAUA,EAAKK,EAAIL,EAAKW,QAAUX,EAAKY,OAASZ,EAAKa,OAASb,EAAKM,MAG7F,SAASN,EAAMQ,EAAUH,EAAGC,GAO5B,GAAIQ,GAAmBd,EAAKQ,QAG5B,IAAIO,KACJ,IAAIC,GAAQD,EAAMC,KAGlBR,GAASS,QAAU,OAInBT,GAASF,EAAIA,CAIbE,GAASU,WAAa,WACpBlB,EAAKQ,SAAWM,CAChB,OAAOK,MAMTX,GAASY,YAAc,KAMvBZ,GAASa,YAAc,KAevB,IAAIC,GAASd,EAASc,SAGtB,IAAIC,GAAgB,KAOpB,IAAIC,GAAY,SAASC,EAAUC,EAAMC,EAAMC,EAAUC,GACvD,GAAIC,GAAI,EAAGC,CACX,IAAIJ,SAAeA,KAAS,SAAU,CAEpC,IAAKI,EAAQ1B,EAAE2B,KAAKL,GAAOG,EAAIC,EAAME,OAASH,IAAK,CACjDJ,EAAOD,EAASC,EAAMK,EAAMD,GAAIH,EAAKI,EAAMD,IAAKD,QAE7C,IAAIF,GAAQJ,EAAcW,KAAKP,GAAO,CAE3C,IAAKI,EAAQJ,EAAKQ,MAAMZ,GAAgBO,EAAIC,EAAME,OAAQH,IAAK,CAC7DJ,EAAOD,EAASC,EAAMK,EAAMD,GAAIF,EAAUC,QAEvC,CACLH,EAAOD,EAASC,EAAMC,EAAMC,EAAUC,GAExC,MAAOH,GAKTJ,GAAOc,GAAK,SAAST,EAAMC,EAAUS,GACnC,MAAOC,GAAWnB,KAAMQ,EAAMC,EAAUS,GAK1C,IAAIC,GAAa,SAASC,EAAKZ,EAAMC,EAAUS,EAASG,GACtDD,EAAIE,QAAUjB,EAAUkB,EAAOH,EAAIE,YAAed,EAAMC,GACpDS,QAASA,EACTM,IAAKJ,EACLC,UAAWA,GAGf,IAAIA,EAAW,CACb,GAAII,GAAYL,EAAIM,aAAeN,EAAIM,cACvCD,GAAUJ,EAAUM,IAAMN,EAG5B,MAAOD,GAKTjB,GAAOyB,SAAY,SAASR,EAAKZ,EAAMC,GACrC,IAAKW,EAAK,MAAOpB,KACjB,IAAI2B,GAAKP,EAAIS,YAAcT,EAAIS,UAAY3C,EAAE4C,SAAS,KACtD,IAAIC,GAAc/B,KAAKgC,eAAiBhC,KAAKgC,gBAC7C,IAAIX,GAAYU,EAAYJ,EAI5B,KAAKN,EAAW,CACd,GAAIY,GAASjC,KAAK6B,YAAc7B,KAAK6B,UAAY3C,EAAE4C,SAAS,KAC5DT,GAAYU,EAAYJ,IAAOP,IAAKA,EAAKc,MAAOP,EAAIA,GAAIM,EAAQF,YAAaA,EAAaI,MAAO,GAInGhB,EAAWC,EAAKZ,EAAMC,EAAUT,KAAMqB,EACtC,OAAOrB,MAIT,IAAIuB,GAAQ,SAASa,EAAQ5B,EAAMC,EAAU4B,GAC3C,GAAI5B,EAAU,CACZ,GAAI6B,GAAWF,EAAO5B,KAAU4B,EAAO5B,MACvC,IAAIU,GAAUmB,EAAQnB,QAASM,EAAMa,EAAQb,IAAKH,EAAYgB,EAAQhB,SACtE,IAAIA,EAAWA,EAAUc,OAEzBG,GAASC,MAAO9B,SAAUA,EAAUS,QAASA,EAASM,IAAKN,GAAWM,EAAKH,UAAWA,IAExF,MAAOe,GAOTjC,GAAOqC,IAAO,SAAShC,EAAMC,EAAUS,GACrC,IAAKlB,KAAKsB,QAAS,MAAOtB,KAC1BA,MAAKsB,QAAUjB,EAAUoC,EAAQzC,KAAKsB,QAASd,EAAMC,GACjDS,QAASA,EACTO,UAAWzB,KAAK0B,YAEpB,OAAO1B,MAKTG,GAAOuC,cAAiB,SAAStB,EAAKZ,EAAMC,GAC1C,GAAIsB,GAAc/B,KAAKgC,YACvB,KAAKD,EAAa,MAAO/B,KAEzB,IAAI2C,GAAMvB,GAAOA,EAAIS,WAAa3C,EAAE2B,KAAKkB,EAEzC,KAAK,GAAIpB,GAAI,EAAGA,EAAIgC,EAAI7B,OAAQH,IAAK,CACnC,GAAIU,GAAYU,EAAYY,EAAIhC,GAIhC,KAAKU,EAAW,KAEhBA,GAAUD,IAAIoB,IAAIhC,EAAMC,EAAUT,MAEpC,GAAId,EAAE0D,QAAQb,GAAc/B,KAAKgC,iBAAoB,EAErD,OAAOhC,MAIT,IAAIyC,GAAS,SAASL,EAAQ5B,EAAMC,EAAU4B,GAE5C,IAAKD,EAAQ,MAEb,IAAIzB,GAAI,EAAGG,EAAQO,CACnB,IAAIH,GAAUmB,EAAQnB,QAASO,EAAYY,EAAQZ,SAGnD,KAAKjB,IAASC,IAAaS,EAAS,CAClC,GAAIyB,GAAMzD,EAAE2B,KAAKY,EACjB,MAAOd,EAAIgC,EAAI7B,OAAQH,IAAK,CAC1BU,EAAYI,EAAUkB,EAAIhC,UACnBc,GAAUJ,EAAUM,UACpBN,GAAUU,YAAYV,EAAUa,OAEzC,OAGF,GAAItB,GAAQJ,GAAQA,GAAQtB,EAAE2B,KAAKuB,EACnC,MAAOzB,EAAIC,EAAME,OAAQH,IAAK,CAC5BH,EAAOI,EAAMD,EACb,IAAI2B,GAAWF,EAAO5B,EAGtB,KAAK8B,EAAU,KAGf,IAAIO,KACJ,KAAK,GAAIC,GAAI,EAAGA,EAAIR,EAASxB,OAAQgC,IAAK,CACxC,GAAIC,GAAUT,EAASQ,EACvB,IACErC,GAAYA,IAAasC,EAAQtC,UAC/BA,IAAasC,EAAQtC,SAASuC,WAC5B9B,GAAWA,IAAY6B,EAAQ7B,QACnC,CACA2B,EAAUN,KAAKQ,OACV,CACL1B,EAAY0B,EAAQ1B,SACpB,IAAIA,KAAeA,EAAUc,QAAU,EAAG,OACjCV,GAAUJ,EAAUM,UACpBN,GAAUU,YAAYV,EAAUa,SAM7C,GAAIW,EAAU/B,OAAQ,CACpBsB,EAAO5B,GAAQqC,MACV,OACET,GAAO5B,IAGlB,GAAItB,EAAE+D,KAAKb,GAAS,MAAOA,GAO7BjC,GAAO+C,KAAQ,SAAS1C,EAAMC,EAAUS,GAEtC,GAAIkB,GAAS/B,EAAU8C,KAAa3C,EAAMC,EAAUvB,EAAEkE,KAAKpD,KAAKwC,IAAKxC,MACrE,OAAOA,MAAKiB,GAAGmB,MAAa,GAAGlB,GAIjCf,GAAOkD,aAAgB,SAASjC,EAAKZ,EAAMC,GAEzC,GAAI2B,GAAS/B,EAAU8C,KAAa3C,EAAMC,EAAUvB,EAAEkE,KAAKpD,KAAK0C,cAAe1C,KAAMoB,GACrF,OAAOpB,MAAK4B,SAASR,EAAKgB,GAK5B,IAAIe,GAAU,SAASG,EAAK9C,EAAMC,EAAU8C,GAC1C,GAAI9C,EAAU,CACZ,GAAIyC,GAAOI,EAAI9C,GAAQtB,EAAEgE,KAAK,WAC5BK,EAAM/C,EAAM0C,EACZzC,GAAS+C,MAAMxD,KAAMyD,YAEvBP,GAAKF,UAAYvC,EAEnB,MAAO6C,GAOTnD,GAAOuD,QAAW,SAASlD,GACzB,IAAKR,KAAKsB,QAAS,MAAOtB,KAE1B,IAAIc,GAAS6C,KAAKC,IAAI,EAAGH,UAAU3C,OAAS,EAC5C,IAAI+C,GAAOC,MAAMhD,EACjB,KAAK,GAAIH,GAAI,EAAGA,EAAIG,EAAQH,IAAKkD,EAAKlD,GAAK8C,UAAU9C,EAAI,EAEzDN,GAAU0D,EAAY/D,KAAKsB,QAASd,MAAW,GAAGqD,EAClD,OAAO7D,MAIT,IAAI+D,GAAa,SAASC,EAAWxD,EAAMyD,EAAIJ,GAC7C,GAAIG,EAAW,CACb,GAAI5B,GAAS4B,EAAUxD,EACvB,IAAI0D,GAAYF,EAAUG,GAC1B,IAAI/B,GAAU8B,EAAWA,EAAYA,EAAUrE,OAC/C,IAAIuC,EAAQgC,EAAchC,EAAQyB,EAClC,IAAIK,EAAWE,EAAcF,GAAY1D,GAAM6D,OAAOR,IAExD,MAAOG,GAMT,IAAII,GAAgB,SAAShC,EAAQyB,GACnC,GAAIS,GAAI3D,GAAK,EAAG4D,EAAInC,EAAOtB,OAAQ0D,EAAKX,EAAK,GAAIY,EAAKZ,EAAK,GAAIa,EAAKb,EAAK,EACzE,QAAQA,EAAK/C,QACX,IAAK,GAAG,QAASH,EAAI4D,GAAID,EAAKlC,EAAOzB,IAAIF,SAASkE,KAAKL,EAAG9C,IAAM,OAChE,KAAK,GAAG,QAASb,EAAI4D,GAAID,EAAKlC,EAAOzB,IAAIF,SAASkE,KAAKL,EAAG9C,IAAKgD,EAAK,OACpE,KAAK,GAAG,QAAS7D,EAAI4D,GAAID,EAAKlC,EAAOzB,IAAIF,SAASkE,KAAKL,EAAG9C,IAAKgD,EAAIC,EAAK,OACxE,KAAK,GAAG,QAAS9D,EAAI4D,GAAID,EAAKlC,EAAOzB,IAAIF,SAASkE,KAAKL,EAAG9C,IAAKgD,EAAIC,EAAIC,EAAK,OAC5E,SAAS,QAAS/D,EAAI4D,GAAID,EAAKlC,EAAOzB,IAAIF,SAAS+C,MAAMc,EAAG9C,IAAKqC,EAAO,SAM5E,IAAIe,GAAY,SAAS9D,EAAQ+D,EAAQC,GACvC,OAAQhE,GACN,IAAK,GAAG,MAAO,YACb,MAAO5B,GAAE2F,GAAQ7E,KAAK8E,IAExB,KAAK,GAAG,MAAO,UAASC,GACtB,MAAO7F,GAAE2F,GAAQ7E,KAAK8E,GAAYC,GAEpC,KAAK,GAAG,MAAO,UAASzE,EAAUY,GAChC,MAAOhC,GAAE2F,GAAQ7E,KAAK8E,GAAYxE,EAAUY,GAE9C,KAAK,GAAG,MAAO,UAASZ,EAAU0E,EAAY9D,GAC5C,MAAOhC,GAAE2F,GAAQ7E,KAAK8E,GAAYxE,EAAU0E,EAAY9D,GAE1D,SAAS,MAAO,YACd,GAAI2C,GAAOhE,EAAM8E,KAAKlB,UACtBI,GAAKoB,QAAQjF,KAAK8E,GAClB,OAAO5F,GAAE2F,GAAQrB,MAAMtE,EAAG2E,KAIhC,IAAIqB,GAAuB,SAASC,EAAOC,EAASN,GAClD5F,EAAEmG,KAAKD,EAAS,SAAStE,EAAQ+D,GAC/B,GAAI3F,EAAE2F,GAASM,EAAMG,UAAUT,GAAUD,EAAU9D,EAAQ+D,EAAQC,KAKvE3E,GAAOiD,KAASjD,EAAOc,EACvBd,GAAOoF,OAASpF,EAAOqC,GAIvBtD,GAAEsG,OAAOnG,EAAUc,EAYnB,IAAIsF,GAAQpG,EAASoG,MAAQ,SAASC,EAAYrD,GAChD,GAAIsD,GAAQD,KACZrD,KAAYA,KACZrC,MAAK4F,IAAM1G,EAAE4C,SAAS9B,KAAK6F,UAC3B7F,MAAK0F,aACL,IAAIrD,EAAQyD,WAAY9F,KAAK8F,WAAazD,EAAQyD,UAClD,IAAIzD,EAAQ0D,MAAOJ,EAAQ3F,KAAK+F,MAAMJ,EAAOtD,MAC7CsD,GAAQzG,EAAE8G,YAAaL,EAAOzG,EAAE+G,OAAOjG,KAAM,YAC7CA,MAAKkG,IAAIP,EAAOtD,EAChBrC,MAAKmG,UACLnG,MAAKoG,WAAW5C,MAAMxD,KAAMyD,WAI9BvE,GAAEsG,OAAOC,EAAMH,UAAWnF,GAGxBgG,QAAS,KAGTE,gBAAiB,KAIjBC,YAAa,KAIbT,UAAW,IAIXO,WAAY,aAGZG,OAAQ,SAASlE,GACf,MAAOnD,GAAEsH,MAAMxG,KAAK0F,aAKtBe,KAAM,WACJ,MAAOpH,GAASoH,KAAKjD,MAAMxD,KAAMyD,YAInCiD,IAAK,SAASC,GACZ,MAAO3G,MAAK0F,WAAWiB,IAIzBC,OAAQ,SAASD,GACf,MAAOzH,GAAE0H,OAAO5G,KAAK0G,IAAIC,KAK3BE,IAAK,SAASF,GACZ,MAAO3G,MAAK0G,IAAIC,IAAS,MAI3BG,QAAS,SAASnB,GAChB,QAASzG,EAAEoB,SAASqF,EAAO3F,MAAMA,KAAK0F,aAMxCQ,IAAK,SAASa,EAAKC,EAAK3E,GACtB,GAAIsE,GAAMhB,EAAOsB,EAAOC,EAASC,EAAQC,EAAUC,EAAMC,CACzD,IAAIP,GAAO,KAAM,MAAO/G,KAGxB,UAAW+G,KAAQ,SAAU,CAC3BpB,EAAQoB,CACR1E,GAAU2E,MACL,EACJrB,MAAYoB,GAAOC,EAGtB3E,IAAYA,KAGZ,KAAKrC,KAAKuH,UAAU5B,EAAOtD,GAAU,MAAO,MAG5C4E,GAAkB5E,EAAQ4E,KAC1BE,GAAkB9E,EAAQ8E,MAC1BD,KACAE,GAAkBpH,KAAKwH,SACvBxH,MAAKwH,UAAa,IAElB,KAAKJ,EAAU,CACbpH,KAAKyH,oBAAsBvI,EAAEsH,MAAMxG,KAAK0F,WACxC1F,MAAKmG,WAEPmB,EAAUtH,KAAK0F,WAAY2B,EAAOrH,KAAKyH,mBAGvC,IAAIzH,KAAKsG,cAAeX,GAAO3F,KAAK2B,GAAKgE,EAAM3F,KAAKsG,YAGpD,KAAKK,IAAQhB,GAAO,CAClBqB,EAAMrB,EAAMgB,EACZ,KAAKzH,EAAEwI,QAAQJ,EAAQX,GAAOK,GAAME,EAAQ3E,KAAKoE,EACjD,KAAKzH,EAAEwI,QAAQL,EAAKV,GAAOK,GAAM,CAC/BhH,KAAKmG,QAAQQ,GAAQK,MAChB,OACEhH,MAAKmG,QAAQQ,GAEtBM,QAAeK,GAAQX,GAAQW,EAAQX,GAAQK,EAIjD,IAAKG,EAAQ,CACX,GAAID,EAAQpG,OAAQd,KAAK2H,SAAWtF,CACpC,KAAK,GAAI1B,GAAI,EAAGA,EAAIuG,EAAQpG,OAAQH,IAAK,CACvCX,KAAK0D,QAAQ,UAAYwD,EAAQvG,GAAIX,KAAMsH,EAAQJ,EAAQvG,IAAK0B,IAMpE,GAAI+E,EAAU,MAAOpH,KACrB,KAAKmH,EAAQ,CACX,MAAOnH,KAAK2H,SAAU,CACpBtF,EAAUrC,KAAK2H,QACf3H,MAAK2H,SAAW,KAChB3H,MAAK0D,QAAQ,SAAU1D,KAAMqC,IAGjCrC,KAAK2H,SAAW,KAChB3H,MAAKwH,UAAY,KACjB,OAAOxH,OAKTiH,MAAO,SAASN,EAAMtE,GACpB,MAAOrC,MAAKkG,IAAIS,MAAW,GAAGzH,EAAEsG,UAAWnD,GAAU4E,MAAO,SAI9DW,MAAO,SAASvF,GACd,GAAIsD,KACJ,KAAK,GAAIoB,KAAO/G,MAAK0F,WAAYC,EAAMoB,OAAY,EACnD,OAAO/G,MAAKkG,IAAIP,EAAOzG,EAAEsG,UAAWnD,GAAU4E,MAAO,SAKvDY,WAAY,SAASlB,GACnB,GAAIA,GAAQ,KAAM,OAAQzH,EAAE0D,QAAQ5C,KAAKmG,QACzC,OAAOjH,GAAE2H,IAAI7G,KAAKmG,QAASQ,IAS7BmB,kBAAmB,SAASC,GAC1B,IAAKA,EAAM,MAAO/H,MAAK6H,aAAe3I,EAAEsH,MAAMxG,KAAKmG,SAAW,KAC9D,IAAIa,GAAKb,EAAU,KACnB,IAAI6B,GAAMhI,KAAKwH,UAAYxH,KAAKyH,oBAAsBzH,KAAK0F,UAC3D,KAAK,GAAIiB,KAAQoB,GAAM,CACrB,GAAI7I,EAAEwI,QAAQM,EAAIrB,GAAQK,EAAMe,EAAKpB,IAAS,UAC7CR,IAAYA,OAAeQ,GAAQK,EAEtC,MAAOb,IAKT8B,SAAU,SAAStB,GACjB,GAAIA,GAAQ,OAAS3G,KAAKyH,oBAAqB,MAAO,KACtD,OAAOzH,MAAKyH,oBAAoBd,IAKlCuB,mBAAoB,WAClB,MAAOhJ,GAAEsH,MAAMxG,KAAKyH,sBAKtBU,MAAO,SAAS9F,GACdA,EAAUA,EAAUnD,EAAEsH,MAAMnE,KAC5B,IAAIA,EAAQ0D,YAAe,GAAG1D,EAAQ0D,MAAQ,IAC9C,IAAIqC,GAAQpI,IACZ,IAAIqI,GAAUhG,EAAQgG,OACtBhG,GAAQgG,QAAU,SAASC,GACzB,IAAKF,EAAMlC,IAAIkC,EAAMrC,MAAMuC,EAAMjG,GAAUA,GAAU,MAAO,MAC5D,IAAIgG,EAASA,EAAQ1D,KAAKtC,EAAQnB,QAASkH,EAAOE,EAAMjG,EACxD+F,GAAM1E,QAAQ,OAAQ0E,EAAOE,EAAMjG,GAErCkG,GAAUvI,KAAMqC,EAChB,OAAOrC,MAAKyG,KAAK,OAAQzG,KAAMqC,IAMjCmG,KAAM,SAASzB,EAAKC,EAAK3E,GACvB,GAAIsD,GAAOd,EAAQ4D,EAAK/C,EAAa1F,KAAK0F,WAAYgD,CAGtD,IAAI3B,GAAO,YAAeA,KAAQ,SAAU,CAC1CpB,EAAQoB,CACR1E,GAAU2E,MACL,EACJrB,MAAYoB,GAAOC,EAGtB3E,EAAUnD,EAAEsG,QAAQmD,SAAU,MAAOtG,EACrCqG,GAAOrG,EAAQqG,IAKf,IAAI/C,IAAU+C,EAAM,CAClB,IAAK1I,KAAKkG,IAAIP,EAAOtD,GAAU,MAAO,WACjC,CACL,IAAKrC,KAAKuH,UAAU5B,EAAOtD,GAAU,MAAO,OAI9C,GAAIsD,GAAS+C,EAAM,CACjB1I,KAAK0F,WAAaxG,EAAEsG,UAAWE,EAAYC,GAK7C,GAAItD,EAAQ0D,YAAe,GAAG1D,EAAQ0D,MAAQ,IAC9C,IAAIqC,GAAQpI,IACZ,IAAIqI,GAAUhG,EAAQgG,OACtBhG,GAAQgG,QAAU,SAASC,GAEzBF,EAAM1C,WAAaA,CACnB,IAAIkD,GAAcvG,EAAQ0D,MAAQqC,EAAMrC,MAAMuC,EAAMjG,GAAWiG,CAC/D,IAAII,EAAME,EAAc1J,EAAEsG,OAAOG,MAAaiD,EAC9C,IAAI1J,EAAE2J,SAASD,KAAiBR,EAAMlC,IAAI0C,EAAavG,GAAU,CAC/D,MAAO,OAET,GAAIgG,EAASA,EAAQ1D,KAAKtC,EAAQnB,QAASkH,EAAOE,EAAMjG,EACxD+F,GAAM1E,QAAQ,OAAQ0E,EAAOE,EAAMjG,GAErCkG,GAAUvI,KAAMqC,EAEhBwC,GAAS7E,KAAK8I,QAAU,SAAYzG,EAAQ0G,MAAQ,QAAU,QAC9D,IAAIlE,IAAW,UAAYxC,EAAQsD,MAAOtD,EAAQsD,MAAQA,CAC1D8C,GAAMzI,KAAKyG,KAAK5B,EAAQ7E,KAAMqC,EAG9B,IAAIsD,GAAS+C,EAAM1I,KAAK0F,WAAaA,CAErC,OAAO+C,IAMTO,QAAS,SAAS3G,GAChBA,EAAUA,EAAUnD,EAAEsH,MAAMnE,KAC5B,IAAI+F,GAAQpI,IACZ,IAAIqI,GAAUhG,EAAQgG,OACtB,IAAIK,GAAOrG,EAAQqG,IAEnB,IAAIM,GAAU,WACZZ,EAAM1F,eACN0F,GAAM1E,QAAQ,UAAW0E,EAAOA,EAAMtC,WAAYzD,GAGpDA,GAAQgG,QAAU,SAASC,GACzB,GAAII,EAAMM,GACV,IAAIX,EAASA,EAAQ1D,KAAKtC,EAAQnB,QAASkH,EAAOE,EAAMjG,EACxD,KAAK+F,EAAMU,QAASV,EAAM1E,QAAQ,OAAQ0E,EAAOE,EAAMjG,GAGzD,IAAIoG,GAAM,KACV,IAAIzI,KAAK8I,QAAS,CAChB5J,EAAE+J,MAAM5G,EAAQgG,aACX,CACLE,EAAUvI,KAAMqC,EAChBoG,GAAMzI,KAAKyG,KAAK,SAAUzG,KAAMqC,GAElC,IAAKqG,EAAMM,GACX,OAAOP,IAMTS,IAAK,WACH,GAAIC,GACFjK,EAAE+G,OAAOjG,KAAM,YACfd,EAAE+G,OAAOjG,KAAK8F,WAAY,QAC1BsD,GACF,IAAIpJ,KAAK8I,QAAS,MAAOK,EACzB,IAAIxH,GAAK3B,KAAK2B,IAAM3B,KAAK0F,WAAW1F,KAAKsG,YACzC,OAAO6C,GAAKE,QAAQ,WAAY,OAASC,mBAAmB3H,IAK9DoE,MAAO,SAASuC,EAAMjG,GACpB,MAAOiG,IAIT9B,MAAO,WACL,MAAO,IAAIxG,MAAKuJ,YAAYvJ,KAAK0F,aAInCoD,MAAO,WACL,OAAQ9I,KAAK6G,IAAI7G,KAAKsG,cAIxBkD,QAAS,SAASnH,GAChB,MAAOrC,MAAKuH,aAAcrI,EAAEsG,OAAOnD,OAAiBsG,SAAU,SAKhEpB,UAAW,SAAS5B,EAAOtD,GACzB,IAAKA,EAAQsG,WAAa3I,KAAK2I,SAAU,MAAO,KAChDhD,GAAQzG,EAAEsG,UAAWxF,KAAK0F,WAAYC,EACtC,IAAI8D,GAAQzJ,KAAKqG,gBAAkBrG,KAAK2I,SAAShD,EAAOtD,IAAY,IACpE,KAAKoH,EAAO,MAAO,KACnBzJ,MAAK0D,QAAQ,UAAW1D,KAAMyJ,EAAOvK,EAAEsG,OAAOnD,GAAUgE,gBAAiBoD,IACzE,OAAO,SAMX,IAAIC,IAAiB7I,KAAM,EAAG8I,OAAQ,EAAGC,MAAO,EAAGC,OAAQ,EAAGC,KAAM,EAChEC,KAAM,EAAGC,MAAO,EAAGpH,QAAS,EAGhCsC,GAAqBO,EAAOiE,EAAc,aAe1C,IAAIO,GAAa5K,EAAS4K,WAAa,SAASC,EAAQ7H,GACtDA,IAAYA,KACZ,IAAIA,EAAQ+F,MAAOpI,KAAKoI,MAAQ/F,EAAQ+F,KACxC,IAAI/F,EAAQ8H,iBAAoB,GAAGnK,KAAKmK,WAAa9H,EAAQ8H,UAC7DnK,MAAKoK,QACLpK,MAAKoG,WAAW5C,MAAMxD,KAAMyD,UAC5B,IAAIyG,EAAQlK,KAAKqK,MAAMH,EAAQhL,EAAEsG,QAAQ2B,OAAQ,MAAO9E,IAI1D,IAAIiI,IAAcC,IAAK,KAAMC,OAAQ,KAAMC,MAAO,KAClD,IAAIC,IAAcH,IAAK,KAAMC,OAAQ,MAGrCtL,GAAEsG,OAAOyE,EAAW3E,UAAWnF,GAI7BiI,MAAO3C,EAIPW,WAAY,aAIZG,OAAQ,SAASlE,GACf,MAAOrC,MAAKsD,IAAI,SAAS8E,GAAQ,MAAOA,GAAM7B,OAAOlE,MAIvDoE,KAAM,WACJ,MAAOpH,GAASoH,KAAKjD,MAAMxD,KAAMyD,YAInC8G,IAAK,SAASL,EAAQ7H,GACpB,MAAOrC,MAAKkG,IAAIgE,EAAQhL,EAAEsG,QAAQiF,MAAO,OAAQpI,EAASqI,KAI5DF,OAAQ,SAASN,EAAQ7H,GACvB,GAAIsI,IAAYzL,EAAE0L,QAAQV,GAASW,CACnCX,GAASS,GAAYT,GAAUhL,EAAEsH,MAAM0D,EACvC7H,KAAYA,KACZwI,GAAU7K,KAAK8K,cAAcZ,EAAQ7H,EACrC,KAAKA,EAAQ8E,QAAU0D,EAAS7K,KAAK0D,QAAQ,SAAU1D,KAAMqC,EAC7D,OAAOsI,GAAWT,EAAO,GAAKA,GAOhChE,IAAK,SAASgE,EAAQ7H,GACpBA,EAAUnD,EAAE8G,YAAa3D,EAASiI,EAClC,IAAIjI,EAAQ0D,MAAOmE,EAASlK,KAAK+F,MAAMmE,EAAQ7H,EAC/C,IAAIsI,IAAYzL,EAAE0L,QAAQV,EAC1BA,GAASS,EAAYT,GAAUA,MAAgBA,EAAOrK,OACtD,IAAI8B,GAAIyG,EAAOzC,EAAOoF,EAAUC,CAChC,IAAIC,GAAK5I,EAAQ4I,EACjB,IAAIA,GAAM,KAAMA,GAAMA,CACtB,IAAIA,EAAK,EAAGA,GAAMjL,KAAKc,OAAS,CAChC,IAAIoK,GAAWlL,KAAKmK,YAAec,GAAM,MAAS5I,EAAQ2I,OAAS,KACnE,IAAIG,GAAWjM,EAAEkM,SAASpL,KAAKmK,YAAcnK,KAAKmK,WAAa,IAC/D,IAAIkB,MAAYC,KAAeC,IAC/B,IAAIhB,GAAMlI,EAAQkI,IAAKE,EAAQpI,EAAQoI,MAAOD,EAASnI,EAAQmI,MAC/D,IAAIgB,IAASN,GAAYX,GAAOC,KAAc,KAC9C,IAAIiB,GAAe,KAInB,KAAK,GAAI9K,GAAI,EAAGA,EAAIuJ,EAAOpJ,OAAQH,IAAK,CACtCgF,EAAQuE,EAAOvJ,EAIf,IAAIoK,EAAW/K,KAAK0G,IAAIf,GAAQ,CAC9B,GAAI6E,EAAQe,EAASR,EAASnF,KAAO,IACrC,IAAI6E,GAAS9E,IAAUoF,EAAU,CAC/BpF,EAAQ3F,KAAK0L,SAAS/F,GAASA,EAAMD,WAAaC,CAClD,IAAItD,EAAQ0D,MAAOJ,EAAQoF,EAAShF,MAAMJ,EAAOtD,EACjD0I,GAAS7E,IAAIP,EAAOtD,EACpB,IAAI6I,IAAaF,GAAQD,EAASlD,WAAWsD,GAAWH,EAAO,KAEjEd,EAAOvJ,GAAKoK,MAGP,IAAIR,EAAK,CACdnC,EAAQ8B,EAAOvJ,GAAKX,KAAK2L,cAAchG,EAAOtD,EAC9C,KAAK+F,EAAO,QACZiD,GAAM9I,KAAK6F,EACXpI,MAAK4L,cAAcxD,EAAO/F,GAI5B+F,EAAQ2C,GAAY3C,CACpB,KAAKA,EAAO,QACZzG,GAAK3B,KAAK6L,QAAQzD,EAAM1C,WACxB,IAAI8F,IAAUpD,EAAMU,UAAYyC,EAAS5J,IAAM,CAC7C6J,EAAMjJ,KAAK6F,EAGXqD,GAAeA,IAAiBzL,KAAKkK,OAAOvJ,IAAMyH,EAAMxC,MAAQ5F,KAAKkK,OAAOvJ,GAAGiF,IAGjF2F,EAAS5J,GAAM,KAIjB,GAAI6I,EAAQ,CACV,IAAK,GAAI7J,GAAI,EAAGA,EAAIX,KAAKc,OAAQH,IAAK,CACpC,IAAK4K,GAAUnD,EAAQpI,KAAKkK,OAAOvJ,IAAIiF,KAAM0F,EAAS/I,KAAK6F,GAE7D,GAAIkD,EAASxK,OAAQd,KAAK8K,cAAcQ,EAAUjJ,GAIpD,GAAIgJ,EAAMvK,QAAU2K,EAAc,CAChC,GAAIP,EAAUF,EAAO,IACrBhL,MAAKc,QAAUuK,EAAMvK,MACrB,IAAImK,GAAM,KAAM,CACd,IAAK,GAAItK,GAAI,EAAGA,EAAI0K,EAAMvK,OAAQH,IAAK,CACrCX,KAAKkK,OAAO4B,OAAOb,EAAKtK,EAAG,EAAG0K,EAAM1K,SAEjC,CACL,GAAI6K,EAAOxL,KAAKkK,OAAOpJ,OAAS,CAChC,IAAIiL,GAAgBP,GAASH,CAC7B,KAAK,GAAI1K,GAAI,EAAGA,EAAIoL,EAAcjL,OAAQH,IAAK,CAC7CX,KAAKkK,OAAO3H,KAAKwJ,EAAcpL,MAMrC,GAAIqK,EAAMhL,KAAKgL,MAAM7D,OAAQ,MAG7B,KAAK9E,EAAQ8E,OAAQ,CACnB,GAAI6E,GAAUf,GAAM,KAAO/L,EAAEsH,MAAMnE,GAAWA,CAC9C,KAAK,GAAI1B,GAAI,EAAGA,EAAI0K,EAAMvK,OAAQH,IAAK,CACrC,GAAIsK,GAAM,KAAMe,EAAQC,MAAQhB,EAAKtK,GACpCyH,EAAQiD,EAAM1K,IAAI+C,QAAQ,MAAO0E,EAAOpI,KAAMgM,GAEjD,GAAIhB,GAAQS,EAAczL,KAAK0D,QAAQ,OAAQ1D,KAAMqC,EACrD,IAAIgJ,EAAMvK,QAAUwK,EAASxK,OAAQd,KAAK0D,QAAQ,SAAU1D,KAAMqC,GAIpE,MAAOsI,GAAWT,EAAO,GAAKA,GAOhCG,MAAO,SAASH,EAAQ7H,GACtBA,EAAUA,EAAUnD,EAAEsH,MAAMnE,KAC5B,KAAK,GAAI1B,GAAI,EAAGA,EAAIX,KAAKkK,OAAOpJ,OAAQH,IAAK,CAC3CX,KAAKkM,iBAAiBlM,KAAKkK,OAAOvJ,GAAI0B,GAExCA,EAAQ8J,eAAiBnM,KAAKkK,MAC9BlK,MAAKoK,QACLF,GAASlK,KAAKuK,IAAIL,EAAQhL,EAAEsG,QAAQ2B,OAAQ,MAAO9E,GACnD,KAAKA,EAAQ8E,OAAQnH,KAAK0D,QAAQ,QAAS1D,KAAMqC,EACjD,OAAO6H,IAIT3H,KAAM,SAAS6F,EAAO/F,GACpB,MAAOrC,MAAKuK,IAAInC,EAAOlJ,EAAEsG,QAAQyF,GAAIjL,KAAKc,QAASuB,KAIrD+J,IAAK,SAAS/J,GACZ,GAAI+F,GAAQpI,KAAKiL,GAAGjL,KAAKc,OAAS,EAClCd,MAAKwK,OAAOpC,EAAO/F,EACnB,OAAO+F,IAITnD,QAAS,SAASmD,EAAO/F,GACvB,MAAOrC,MAAKuK,IAAInC,EAAOlJ,EAAEsG,QAAQyF,GAAI,GAAI5I,KAI3CgK,MAAO,SAAShK,GACd,GAAI+F,GAAQpI,KAAKiL,GAAG,EACpBjL,MAAKwK,OAAOpC,EAAO/F,EACnB,OAAO+F,IAITvI,MAAO,WACL,MAAOA,GAAM2D,MAAMxD,KAAKkK,OAAQzG,YAIlCiD,IAAK,SAAStF,GACZ,GAAIA,GAAO,KAAM,WAAY,EAC7B,IAAIO,GAAK3B,KAAK6L,QAAQ7L,KAAK0L,SAAStK,GAAOA,EAAIsE,WAAatE,EAC5D,OAAOpB,MAAKsM,MAAMlL,IAAQpB,KAAKsM,MAAM3K,IAAO3B,KAAKsM,MAAMlL,EAAIwE,MAI7DqF,GAAI,SAASgB,GACX,GAAIA,EAAQ,EAAGA,GAASjM,KAAKc,MAC7B,OAAOd,MAAKkK,OAAO+B,IAKrBM,MAAO,SAAS5G,EAAO6G,GACrB,GAAI1F,GAAU5H,EAAE4H,QAAQnB,EACxB,OAAO3F,MAAKwM,EAAQ,OAAS,UAAU,SAASpE,GAC9C,MAAOtB,GAAQsB,EAAM1C,eAMzB+G,UAAW,SAAS9G,GAClB,MAAO3F,MAAKuM,MAAM5G,EAAO,OAM3BqF,KAAM,SAAS3I,GACb,IAAKrC,KAAKmK,WAAY,KAAM,IAAIuC,OAAM,yCACtCrK,KAAYA,KAGZ,IAAInD,EAAEkM,SAASpL,KAAKmK,aAAenK,KAAKmK,WAAWrJ,SAAW,EAAG,CAC/Dd,KAAKkK,OAASlK,KAAK2M,OAAO3M,KAAKmK,WAAYnK,UACtC,CACLA,KAAKkK,OAAOc,KAAK9L,EAAEkE,KAAKpD,KAAKmK,WAAYnK,OAG3C,IAAKqC,EAAQ8E,OAAQnH,KAAK0D,QAAQ,OAAQ1D,KAAMqC,EAChD,OAAOrC,OAIT4M,MAAO,SAASjG,GACd,MAAOzH,GAAE2N,OAAO7M,KAAKkK,OAAQ,MAAOvD,IAMtCwB,MAAO,SAAS9F,GACdA,EAAUA,EAAUnD,EAAEsH,MAAMnE,KAC5B,IAAIA,EAAQ0D,YAAe,GAAG1D,EAAQ0D,MAAQ,IAC9C,IAAIsC,GAAUhG,EAAQgG,OACtB,IAAIvC,GAAa9F,IACjBqC,GAAQgG,QAAU,SAASC,GACzB,GAAIzD,GAASxC,EAAQgI,MAAQ,QAAU,KACvCvE,GAAWjB,GAAQyD,EAAMjG,EACzB,IAAIgG,EAASA,EAAQ1D,KAAKtC,EAAQnB,QAAS4E,EAAYwC,EAAMjG,EAC7DyD,GAAWpC,QAAQ,OAAQoC,EAAYwC,EAAMjG,GAE/CkG,GAAUvI,KAAMqC,EAChB,OAAOrC,MAAKyG,KAAK,OAAQzG,KAAMqC,IAMjCyK,OAAQ,SAAS1E,EAAO/F,GACtBA,EAAUA,EAAUnD,EAAEsH,MAAMnE,KAC5B,IAAIqG,GAAOrG,EAAQqG,IACnB,MAAMN,EAAQpI,KAAK2L,cAAcvD,EAAO/F,IAAW,MAAO,MAC1D,KAAKqG,EAAM1I,KAAKuK,IAAInC,EAAO/F,EAC3B,IAAIyD,GAAa9F,IACjB,IAAIqI,GAAUhG,EAAQgG,OACtBhG,GAAQgG,QAAU,SAASD,EAAOE,EAAMyE,GACtC,GAAIrE,EAAM5C,EAAWyE,IAAInC,EAAO2E,EAChC,IAAI1E,EAASA,EAAQ1D,KAAKoI,EAAa7L,QAASkH,EAAOE,EAAMyE,GAE/D3E,GAAMI,KAAK,KAAMnG,EACjB,OAAO+F,IAKTrC,MAAO,SAASuC,EAAMjG,GACpB,MAAOiG,IAIT9B,MAAO,WACL,MAAO,IAAIxG,MAAKuJ,YAAYvJ,KAAKkK,QAC/B9B,MAAOpI,KAAKoI,MACZ+B,WAAYnK,KAAKmK,cAKrB0B,QAAS,SAAUlG,GACjB,MAAOA,GAAM3F,KAAKoI,MAAM9C,UAAUgB,aAAe,OAKnD8D,OAAQ,WACNpK,KAAKc,OAAS,CACdd,MAAKkK,SACLlK,MAAKsM,UAKPX,cAAe,SAAShG,EAAOtD,GAC7B,GAAIrC,KAAK0L,SAAS/F,GAAQ,CACxB,IAAKA,EAAMG,WAAYH,EAAMG,WAAa9F,IAC1C,OAAO2F,GAETtD,EAAUA,EAAUnD,EAAEsH,MAAMnE,KAC5BA,GAAQyD,WAAa9F,IACrB,IAAIoI,GAAQ,GAAIpI,MAAKoI,MAAMzC,EAAOtD,EAClC,KAAK+F,EAAM/B,gBAAiB,MAAO+B,EACnCpI,MAAK0D,QAAQ,UAAW1D,KAAMoI,EAAM/B,gBAAiBhE,EACrD,OAAO,QAKTyI,cAAe,SAASZ,EAAQ7H,GAC9B,GAAI1B,GAAG4D,EAAG0H,EAAO7D,EAAOyC,EAAU,KAClC,KAAK,GAAIlK,GAAI,EAAGmC,EAAI,EAAGnC,EAAIuJ,EAAOpJ,OAAQH,IAAK,CAC7C,GAAIyH,GAAQ8B,EAAOvJ,GAAKX,KAAK0G,IAAIwD,EAAOvJ,GACxC,KAAKyH,EAAO,QACZ,IAAIzG,GAAK3B,KAAK6L,QAAQzD,EAAM1C,WAC5B,IAAI/D,GAAM,WAAa3B,MAAKsM,MAAM3K,SAC3B3B,MAAKsM,MAAMlE,EAAMxC,IACxB,IAAIqG,GAAQjM,KAAKgN,QAAQ5E,EACzBpI,MAAKkK,OAAO4B,OAAOG,EAAO,EAC1BjM,MAAKc,QACL,KAAKuB,EAAQ8E,OAAQ,CACnB9E,EAAQ4J,MAAQA,CAChB7D,GAAM1E,QAAQ,SAAU0E,EAAOpI,KAAMqC,GAEvC6H,EAAOpH,KAAOsF,CACdpI,MAAKkM,iBAAiB9D,EAAO/F,EAC7BwI,GAAU,KAIZ,GAAIX,EAAOpJ,SAAWgC,EAAGoH,EAASA,EAAOrK,MAAM,EAAGiD,EAClD,OAAO+H,IAKTa,SAAU,SAAUtD,GAClB,MAAOA,aAAiB3C,IAI1BmG,cAAe,SAASxD,EAAO/F,GAC7BrC,KAAKsM,MAAMlE,EAAMxC,KAAOwC,CACxB,IAAIzG,GAAK3B,KAAK6L,QAAQzD,EAAM1C,WAC5B,IAAI/D,GAAM,KAAM3B,KAAKsM,MAAM3K,GAAMyG,CACjCA,GAAMnH,GAAG,MAAOjB,KAAKiN,cAAejN,OAItCkM,iBAAkB,SAAS9D,EAAO/F,GAChC,GAAIrC,OAASoI,EAAMtC,iBAAmBsC,GAAMtC,UAC5CsC,GAAM5F,IAAI,MAAOxC,KAAKiN,cAAejN,OAOvCiN,cAAe,SAASC,EAAO9E,EAAOtC,EAAYzD,GAChD,IAAK6K,IAAU,OAASA,IAAU,WAAapH,IAAe9F,KAAM,MACpE,IAAIkN,IAAU,UAAWlN,KAAKwK,OAAOpC,EAAO/F,EAC5C,IAAI6K,IAAU,SAAU,CACtB,GAAIC,GAASnN,KAAK6L,QAAQzD,EAAMF,qBAChC,IAAIvG,GAAK3B,KAAK6L,QAAQzD,EAAM1C,WAC5B,IAAIyH,IAAWxL,EAAI,CACjB,GAAIwL,GAAU,WAAanN,MAAKsM,MAAMa,EACtC,IAAIxL,GAAM,KAAM3B,KAAKsM,MAAM3K,GAAMyG,GAGrCpI,KAAK0D,QAAQF,MAAMxD,KAAMyD,aAQ7B,IAAI2J,IAAsBC,QAAS,EAAGhI,KAAM,EAAG/B,IAAK,EAAGgK,QAAS,EAAGC,OAAQ,EACvEC,MAAO,EAAGC,OAAQ,EAAGC,YAAa,EAAGC,MAAO,EAAGC,KAAM,EAAGC,OAAQ,EAAGC,OAAQ,EAC3EC,OAAQ,EAAGC,OAAQ,EAAGC,MAAO,EAAG9J,IAAK,EAAG+J,KAAM,EAAGC,IAAK,EAAGC,QAAS,EAClEC,SAAU,EAAGxB,OAAQ,EAAGjJ,IAAK,EAAG0K,IAAK,EAAGC,QAAS,EAAGtL,KAAM,EAAGuJ,MAAO,EACpEgC,KAAM,EAAGC,KAAM,EAAGC,QAAS,EAAGC,KAAM,EAAGC,KAAM,EAAGC,KAAM,EAAGC,KAAM,EAC/DC,QAAS,EAAGC,WAAY,EAAGhC,QAAS,EAAGiC,QAAS,EAAGC,YAAa,EAChEtM,QAAS,EAAGoH,MAAO,EAAGmF,OAAQ,EAAGC,UAAW,EAGhDlK,GAAqB+E,EAAYmD,EAAmB,SAGpD,IAAIiC,IAAoB,UAAW,UAAW,SAAU,UAGxDnQ,GAAEmG,KAAKgK,EAAkB,SAASxK,GAChC,IAAK3F,EAAE2F,GAAS,MAChBoF,GAAW3E,UAAUT,GAAU,SAASE,EAAO7D,GAC7C,GAAIoO,GAAWpQ,EAAEqQ,WAAWxK,GAASA,EAAQ,SAASqD,GACpD,MAAOA,GAAM1B,IAAI3B,GAEnB,OAAO7F,GAAE2F,GAAQ7E,KAAKkK,OAAQoF,EAAUpO,KAiB5C,IAAIsO,GAAOnQ,EAASmQ,KAAO,SAASnN,GAClCrC,KAAK4F,IAAM1G,EAAE4C,SAAS,OACtBO,KAAYA,KACZnD,GAAEsG,OAAOxF,KAAMd,EAAE4K,KAAKzH,EAASoN,GAC/BzP,MAAK0P,gBACL1P,MAAKoG,WAAW5C,MAAMxD,KAAMyD,WAI9B,IAAIkM,GAAwB,gBAG5B,IAAIF,IAAe,QAAS,aAAc,KAAM,KAAM,aAAc,YAAa,UAAW,SAG5FvQ,GAAEsG,OAAOgK,EAAKlK,UAAWnF,GAGvByP,QAAS,MAITzQ,EAAG,SAAS0Q,GACV,MAAO7P,MAAK8P,IAAIlC,KAAKiC,IAKvBzJ,WAAY,aAKZ2J,OAAQ,WACN,MAAO/P,OAKTwK,OAAQ,WACNxK,KAAKgQ,gBACLhQ,MAAK0C,eACL,OAAO1C,OAMTgQ,eAAgB,WACdhQ,KAAK8P,IAAItF,UAKXyF,WAAY,SAASC,GACnBlQ,KAAKmQ,kBACLnQ,MAAKoQ,YAAYF,EACjBlQ,MAAKqQ,gBACL,OAAOrQ,OAQToQ,YAAa,SAASE,GACpBtQ,KAAK8P,IAAMQ,YAAcjR,GAASF,EAAImR,EAAKjR,EAASF,EAAEmR,EACtDtQ,MAAKsQ,GAAKtQ,KAAK8P,IAAI,IAgBrBO,eAAgB,SAASjO,GACvB,KAAMA,IAAWA,EAASlD,EAAE+G,OAAOjG,KAAM,YAAa,MAAOA,KAC7DA,MAAKmQ,kBACL,KAAK,GAAIpJ,KAAO3E,GAAQ,CACtB,GAAIyC,GAASzC,EAAO2E,EACpB,KAAK7H,EAAEqQ,WAAW1K,GAASA,EAAS7E,KAAKoC,EAAO2E,GAChD,KAAKlC,EAAQ,QACb,IAAI0L,GAAQxJ,EAAIwJ,MAAMZ,EACtB3P,MAAKwQ,SAASD,EAAM,GAAIA,EAAM,GAAIrR,EAAEkE,KAAKyB,EAAQ7E,OAEnD,MAAOA,OAMTwQ,SAAU,SAASC,EAAWZ,EAAUa,GACtC1Q,KAAK8P,IAAI7O,GAAGwP,EAAY,kBAAoBzQ,KAAK4F,IAAKiK,EAAUa,IAMlEP,iBAAkB,WAChB,GAAInQ,KAAK8P,IAAK9P,KAAK8P,IAAItN,IAAI,kBAAoBxC,KAAK4F,IACpD,OAAO5F,OAKT2Q,WAAY,SAASF,EAAWZ,EAAUa,GACxC1Q,KAAK8P,IAAItN,IAAIiO,EAAY,kBAAoBzQ,KAAK4F,IAAKiK,EAAUa,IAKnEE,eAAgB,SAAShB,GACvB,MAAOiB,UAASC,cAAclB,IAOhCF,eAAgB,WACd,IAAK1P,KAAKsQ,GAAI,CACZ,GAAI3K,GAAQzG,EAAEsG,UAAWtG,EAAE+G,OAAOjG,KAAM,cACxC,IAAIA,KAAK2B,GAAIgE,EAAMhE,GAAKzC,EAAE+G,OAAOjG,KAAM,KACvC,IAAIA,KAAK+Q,UAAWpL,EAAM,SAAWzG,EAAE+G,OAAOjG,KAAM,YACpDA,MAAKiQ,WAAWjQ,KAAK4Q,eAAe1R,EAAE+G,OAAOjG,KAAM,YACnDA,MAAKgR,eAAerL,OACf,CACL3F,KAAKiQ,WAAW/Q,EAAE+G,OAAOjG,KAAM,SAMnCgR,eAAgB,SAAStL,GACvB1F,KAAK8P,IAAInJ,KAAKjB,KAuBlBrG,GAASoH,KAAO,SAAS5B,EAAQuD,EAAO/F,GACtC,GAAI4O,GAAOC,EAAUrM,EAGrB3F,GAAE8G,SAAS3D,IAAYA,OACrBpC,YAAaZ,EAASY,YACtBC,YAAab,EAASa,aAIxB,IAAIiR,IAAUF,KAAMA,EAAMG,SAAU,OAGpC,KAAK/O,EAAQ6G,IAAK,CAChBiI,EAAOjI,IAAMhK,EAAE+G,OAAOmC,EAAO,QAAUgB,IAIzC,GAAI/G,EAAQgP,MAAQ,MAAQjJ,IAAUvD,IAAW,UAAYA,IAAW,UAAYA,IAAW,SAAU,CACvGsM,EAAOG,YAAc,kBACrBH,GAAOE,KAAOE,KAAKC,UAAUnP,EAAQsD,OAASyC,EAAM7B,OAAOlE,IAI7D,GAAIA,EAAQnC,YAAa,CACvBiR,EAAOG,YAAc,mCACrBH,GAAOE,KAAOF,EAAOE,MAAQjJ,MAAO+I,EAAOE,SAK7C,GAAIhP,EAAQpC,cAAgBgR,IAAS,OAASA,IAAS,UAAYA,IAAS,SAAU,CACpFE,EAAOF,KAAO,MACd,IAAI5O,EAAQnC,YAAaiR,EAAOE,KAAKI,QAAUR,CAC/C,IAAIS,GAAarP,EAAQqP,UACzBrP,GAAQqP,WAAa,SAASjJ,GAC5BA,EAAIkJ,iBAAiB,yBAA0BV,EAC/C,IAAIS,EAAY,MAAOA,GAAWlO,MAAMxD,KAAMyD,YAKlD,GAAI0N,EAAOF,OAAS,QAAU5O,EAAQnC,YAAa,CACjDiR,EAAOS,YAAc,MAIvB,GAAInI,GAAQpH,EAAQoH,KACpBpH,GAAQoH,MAAQ,SAAShB,EAAKoJ,EAAYC,GACxCzP,EAAQwP,WAAaA,CACrBxP,GAAQyP,YAAcA,CACtB,IAAIrI,EAAOA,EAAM9E,KAAKtC,EAAQnB,QAASuH,EAAKoJ,EAAYC,GAI1D,IAAIrJ,GAAMpG,EAAQoG,IAAMpJ,EAAS0S,KAAK7S,EAAEsG,OAAO2L,EAAQ9O,GACvD+F,GAAM1E,QAAQ,UAAW0E,EAAOK,EAAKpG,EACrC,OAAOoG,GAIT,IAAIyI,IACFpE,OAAU,OACVkF,OAAU,MACVjJ,MAAU,QACVkJ,SAAU,SACVC,KAAU,MAKZ7S,GAAS0S,KAAO,WACd,MAAO1S,GAASF,EAAE4S,KAAKvO,MAAMnE,EAASF,EAAGsE,WAQ3C,IAAI0O,GAAS9S,EAAS8S,OAAS,SAAS9P,GACtCA,IAAYA,KACZ,IAAIA,EAAQ+P,OAAQpS,KAAKoS,OAAS/P,EAAQ+P,MAC1CpS,MAAKqS,aACLrS,MAAKoG,WAAW5C,MAAMxD,KAAMyD,WAK9B,IAAI6O,GAAgB,YACpB,IAAIC,GAAgB,cACpB,IAAIC,GAAgB,QACpB,IAAIC,GAAgB,0BAGpBvT,GAAEsG,OAAO2M,EAAO7M,UAAWnF,GAIzBiG,WAAY,aAQZsM,MAAO,SAASA,EAAOlS,EAAMC,GAC3B,IAAKvB,EAAEyT,SAASD,GAAQA,EAAQ1S,KAAK4S,eAAeF,EACpD,IAAIxT,EAAEqQ,WAAW/O,GAAO,CACtBC,EAAWD,CACXA,GAAO,GAET,IAAKC,EAAUA,EAAWT,KAAKQ,EAC/B,IAAIqS,GAAS7S,IACbX,GAASyT,QAAQJ,MAAMA,EAAO,SAASK,GACrC,GAAIlP,GAAOgP,EAAOG,mBAAmBN,EAAOK,EAC5C,IAAIF,EAAOI,QAAQxS,EAAUoD,EAAMrD,KAAU,MAAO,CAClDqS,EAAOnP,QAAQF,MAAMqP,GAAS,SAAWrS,GAAM6D,OAAOR,GACtDgP,GAAOnP,QAAQ,QAASlD,EAAMqD,EAC9BxE,GAASyT,QAAQpP,QAAQ,QAASmP,EAAQrS,EAAMqD,KAGpD,OAAO7D,OAKTiT,QAAS,SAASxS,EAAUoD,EAAMrD,GAChC,GAAIC,EAAUA,EAAS+C,MAAMxD,KAAM6D,IAIrCqP,SAAU,SAASH,EAAU1Q,GAC3BhD,EAASyT,QAAQI,SAASH,EAAU1Q,EACpC,OAAOrC,OAMTqS,YAAa,WACX,IAAKrS,KAAKoS,OAAQ,MAClBpS,MAAKoS,OAASlT,EAAE+G,OAAOjG,KAAM,SAC7B,IAAI0S,GAAON,EAASlT,EAAE2B,KAAKb,KAAKoS,OAChC,QAAQM,EAAQN,EAAOhG,QAAU,KAAM,CACrCpM,KAAK0S,MAAMA,EAAO1S,KAAKoS,OAAOM,MAMlCE,eAAgB,SAASF,GACvBA,EAAQA,EAAMrJ,QAAQoJ,EAAc,QACtBpJ,QAAQiJ,EAAe,WACvBjJ,QAAQkJ,EAAY,SAAShC,EAAO4C,GACnC,MAAOA,GAAW5C,EAAQ,aAE3BlH,QAAQmJ,EAAY,WAClC,OAAO,IAAIY,QAAO,IAAMV,EAAQ,yBAMlCM,mBAAoB,SAASN,EAAOK,GAClC,GAAI5B,GAASuB,EAAMW,KAAKN,GAAUlT,MAAM,EACxC,OAAOX,GAAEoE,IAAI6N,EAAQ,SAASmC,EAAO3S,GAEnC,GAAIA,IAAMwQ,EAAOrQ,OAAS,EAAG,MAAOwS,IAAS,IAC7C,OAAOA,GAAQC,mBAAmBD,GAAS,SAcjD,IAAIE,GAAUnU,EAASmU,QAAU,WAC/BxT,KAAKsC,WACLpD,GAAEuU,QAAQzT,KAAM,WAGhB,UAAW0T,UAAW,YAAa,CACjC1T,KAAK2T,SAAWD,OAAOC,QACvB3T,MAAK8S,QAAUY,OAAOZ,SAK1B,IAAIc,GAAgB,cAGpB,IAAIC,GAAe,YAGnB,IAAIC,GAAe,MAGnBN,GAAQO,QAAU,KAGlB7U,GAAEsG,OAAOgO,EAAQlO,UAAWnF,GAI1B6T,SAAU,GAGVC,OAAQ,WACN,GAAIC,GAAOlU,KAAK2T,SAASQ,SAAS9K,QAAQ,SAAU,MACpD,OAAO6K,KAASlU,KAAKnB,OAASmB,KAAKoU,aAIrCC,UAAW,WACT,GAAIH,GAAOlU,KAAKsU,eAAetU,KAAK2T,SAASQ,SAC7C,IAAItV,GAAOqV,EAAKrU,MAAM,EAAGG,KAAKnB,KAAKiC,OAAS,GAAK,GACjD,OAAOjC,KAASmB,KAAKnB,MAMvByV,eAAgB,SAASvB,GACvB,MAAOwB,WAAUxB,EAAS1J,QAAQ,OAAQ,WAK5C+K,UAAW,WACT,GAAI7D,GAAQvQ,KAAK2T,SAASa,KAAKnL,QAAQ,MAAO,IAAIkH,MAAM,OACxD,OAAOA,GAAQA,EAAM,GAAK,IAK5BkE,QAAS,SAASf,GAChB,GAAInD,IAASmD,GAAU1T,MAAM2T,SAASa,KAAKjE,MAAM,SACjD,OAAOA,GAAQA,EAAM,GAAK,IAI5BmE,QAAS,WACP,GAAIR,GAAOlU,KAAKsU,eACdtU,KAAK2T,SAASQ,SAAWnU,KAAKoU,aAC9BvU,MAAMG,KAAKnB,KAAKiC,OAAS,EAC3B,OAAOoT,GAAKS,OAAO,KAAO,IAAMT,EAAKrU,MAAM,GAAKqU,GAIlDU,YAAa,SAAS7B,GACpB,GAAIA,GAAY,KAAM,CACpB,GAAI/S,KAAK6U,gBAAkB7U,KAAK8U,iBAAkB,CAChD/B,EAAW/S,KAAK0U,cACX,CACL3B,EAAW/S,KAAKyU,WAGpB,MAAO1B,GAAS1J,QAAQuK,EAAe,KAKzCmB,MAAO,SAAS1S,GACd,GAAImR,EAAQO,QAAS,KAAM,IAAIrH,OAAM,4CACrC8G,GAAQO,QAAU,IAIlB/T,MAAKqC,QAAmBnD,EAAEsG,QAAQ3G,KAAM,KAAMmB,KAAKqC,QAASA,EAC5DrC,MAAKnB,KAAmBmB,KAAKqC,QAAQxD,IACrCmB,MAAK8U,iBAAmB9U,KAAKqC,QAAQ2S,aAAe,KACpDhV,MAAKiV,eAAmB,gBAAkBvB,OAC1C1T,MAAKkV,eAAmBlV,KAAK8U,kBAAoB9U,KAAKiV,cACtDjV,MAAKmV,kBAAqBnV,KAAKqC,QAAQ+S,SACvCpV,MAAKqV,iBAAsBrV,KAAK8S,SAAW9S,KAAK8S,QAAQsC,UACxDpV,MAAK6U,cAAmB7U,KAAKmV,iBAAmBnV,KAAKqV,aACrDrV,MAAK+S,SAAmB/S,KAAK4U,aAG7B5U,MAAKnB,MAAQ,IAAMmB,KAAKnB,KAAO,KAAKwK,QAAQwK,EAAc,IAI1D,IAAI7T,KAAK8U,kBAAoB9U,KAAKmV,gBAAiB,CAIjD,IAAKnV,KAAKqV,gBAAkBrV,KAAKiU,SAAU,CACzC,GAAIpV,GAAOmB,KAAKnB,KAAKgB,MAAM,GAAI,IAAM,GACrCG,MAAK2T,SAAStK,QAAQxK,EAAO,IAAMmB,KAAK0U,UAExC,OAAO,UAIF,IAAI1U,KAAKqV,eAAiBrV,KAAKiU,SAAU,CAC9CjU,KAAKkT,SAASlT,KAAKyU,WAAYpL,QAAS,QAQ5C,IAAKrJ,KAAKiV,gBAAkBjV,KAAK8U,mBAAqB9U,KAAK6U,cAAe,CACxE,GAAIS,GAASzE,SAASC,cAAc,SACpCwE,GAAOC,IAAM,cACbD,GAAOE,MAAMC,QAAU,MACvBH,GAAOI,UAAY,CACnB,IAAIC,GAAO9E,SAAS8E,IAEpB3V,MAAKsV,OAASK,EAAKC,aAAaN,EAAQK,EAAKE,YAAYC,aACzD9V,MAAKsV,OAAOzE,SAASkF,OAAOC,OAC5BhW,MAAKsV,OAAO3B,SAASsC,KAAO,IAAMjW,KAAK+S,SAIzC,GAAImD,GAAmBxC,OAAOwC,kBAAoB,SAAUzF,EAAWC,GACrE,MAAOyF,aAAY,KAAO1F,EAAWC,GAKvC,IAAI1Q,KAAK6U,cAAe,CACtBqB,EAAiB,WAAYlW,KAAKoW,SAAU,WACvC,IAAIpW,KAAKkV,iBAAmBlV,KAAKsV,OAAQ,CAC9CY,EAAiB,aAAclW,KAAKoW,SAAU,WACzC,IAAIpW,KAAK8U,iBAAkB,CAChC9U,KAAKqW,kBAAoBC,YAAYtW,KAAKoW,SAAUpW,KAAKgU,UAG3D,IAAKhU,KAAKqC,QAAQ8E,OAAQ,MAAOnH,MAAKuW,WAKxCC,KAAM,WAEJ,GAAIC,GAAsB/C,OAAO+C,qBAAuB,SAAUhG,EAAWC,GAC3E,MAAOgG,aAAY,KAAOjG,EAAWC,GAIvC,IAAI1Q,KAAK6U,cAAe,CACtB4B,EAAoB,WAAYzW,KAAKoW,SAAU,WAC1C,IAAIpW,KAAKkV,iBAAmBlV,KAAKsV,OAAQ,CAC9CmB,EAAoB,aAAczW,KAAKoW,SAAU,OAInD,GAAIpW,KAAKsV,OAAQ,CACfzE,SAAS8E,KAAKgB,YAAY3W,KAAKsV,OAAOsB,aACtC5W,MAAKsV,OAAS,KAIhB,GAAItV,KAAKqW,kBAAmBQ,cAAc7W,KAAKqW,kBAC/C7C,GAAQO,QAAU,OAKpBrB,MAAO,SAASA,EAAOjS,GACrBT,KAAKsC,SAAS2C,SAASyN,MAAOA,EAAOjS,SAAUA,KAKjD2V,SAAU,SAAS7W,GACjB,GAAI+H,GAAUtH,KAAK4U,aAInB,IAAItN,IAAYtH,KAAK+S,UAAY/S,KAAKsV,OAAQ,CAC5ChO,EAAUtH,KAAKyU,QAAQzU,KAAKsV,QAG9B,GAAIhO,IAAYtH,KAAK+S,SAAU,MAAO,MACtC,IAAI/S,KAAKsV,OAAQtV,KAAKkT,SAAS5L,EAC/BtH,MAAKuW,WAMPA,QAAS,SAASxD,GAEhB,IAAK/S,KAAKqU,YAAa,MAAO,MAC9BtB,GAAW/S,KAAK+S,SAAW/S,KAAK4U,YAAY7B,EAC5C,OAAO7T,GAAEiP,IAAInO,KAAKsC,SAAU,SAASS,GACnC,GAAIA,EAAQ2P,MAAM3R,KAAKgS,GAAW,CAChChQ,EAAQtC,SAASsS,EACjB,OAAO,UAYbG,SAAU,SAASH,EAAU1Q,GAC3B,IAAKmR,EAAQO,QAAS,MAAO,MAC7B,KAAK1R,GAAWA,IAAY,KAAMA,GAAWqB,UAAWrB,EAGxD0Q,GAAW/S,KAAK4U,YAAY7B,GAAY,GAGxC,IAAIlU,GAAOmB,KAAKnB,IAChB,IAAIkU,IAAa,IAAMA,EAAS4B,OAAO,KAAO,IAAK,CACjD9V,EAAOA,EAAKgB,MAAM,GAAI,IAAM,IAE9B,GAAIqJ,GAAMrK,EAAOkU,CAGjBA,GAAW/S,KAAKsU,eAAevB,EAAS1J,QAAQyK,EAAc,IAE9D,IAAI9T,KAAK+S,WAAaA,EAAU,MAChC/S,MAAK+S,SAAWA,CAGhB,IAAI/S,KAAK6U,cAAe,CACtB7U,KAAK8S,QAAQzQ,EAAQgH,QAAU,eAAiB,gBAAiBwH,SAASiG,MAAO5N,OAI5E,IAAIlJ,KAAK8U,iBAAkB,CAChC9U,KAAK+W,YAAY/W,KAAK2T,SAAUZ,EAAU1Q,EAAQgH,QAClD,IAAIrJ,KAAKsV,QAAWvC,IAAa/S,KAAKyU,QAAQzU,KAAKsV,QAAU,CAI3D,IAAKjT,EAAQgH,QAASrJ,KAAKsV,OAAOzE,SAASkF,OAAOC,OAClDhW,MAAK+W,YAAY/W,KAAKsV,OAAO3B,SAAUZ,EAAU1Q,EAAQgH,cAKtD,CACL,MAAOrJ,MAAK2T,SAASqD,OAAO9N,GAE9B,GAAI7G,EAAQqB,QAAS,MAAO1D,MAAKuW,QAAQxD,IAK3CgE,YAAa,SAASpD,EAAUZ,EAAU1J,GACxC,GAAIA,EAAS,CACX,GAAImL,GAAOb,EAASa,KAAKnL,QAAQ,qBAAsB,GACvDsK,GAAStK,QAAQmL,EAAO,IAAMzB,OACzB,CAELY,EAASsC,KAAO,IAAMlD,KAO5B1T,GAASyT,QAAU,GAAIU,EAQvB,IAAIhO,GAAS,SAASyR,EAAYC,GAChC,GAAIC,GAASnX,IACb,IAAIoX,EAKJ,IAAIH,GAAc/X,EAAE2H,IAAIoQ,EAAY,eAAgB,CAClDG,EAAQH,EAAW1N,gBACd,CACL6N,EAAQ,WAAY,MAAOD,GAAO3T,MAAMxD,KAAMyD,YAIhDvE,EAAEsG,OAAO4R,EAAOD,EAAQD,EAIxB,IAAIG,GAAY,WAAYrX,KAAKuJ,YAAc6N,EAC/CC,GAAU/R,UAAY6R,EAAO7R,SAC7B8R,GAAM9R,UAAY,GAAI+R,EAItB,IAAIJ,EAAY/X,EAAEsG,OAAO4R,EAAM9R,UAAW2R,EAI1CG,GAAME,UAAYH,EAAO7R,SAEzB,OAAO8R,GAIT3R,GAAMD,OAASyE,EAAWzE,OAAS2M,EAAO3M,OAASgK,EAAKhK,OAASgO,EAAQhO,OAASA,CAGlF,IAAI4D,GAAW,WACb,KAAM,IAAIsD,OAAM,kDAIlB,IAAInE,GAAY,SAASH,EAAO/F,GAC9B,GAAIoH,GAAQpH,EAAQoH,KACpBpH,GAAQoH,MAAQ,SAASnB,GACvB,GAAImB,EAAOA,EAAM9E,KAAKtC,EAAQnB,QAASkH,EAAOE,EAAMjG,EACpD+F,GAAM1E,QAAQ,QAAS0E,EAAOE,EAAMjG,IAIxC,OAAOhD&quot;}</td>
+      </tr>
+</table>
+
+  </div>
+
+</div>
+
+<a href="#jump-to-line" rel="facebox[.linejump]" data-hotkey="l" style="display:none">Jump to Line</a>
+<div id="jump-to-line" style="display:none">
+  <form accept-charset="UTF-8" action="" class="js-jump-to-line-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input class="linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" autofocus>
+    <button type="submit" class="btn">Go</button>
+</form></div>
+
+        </div>
+
+      </div><!-- /.repo-container -->
+      <div class="modal-backdrop"></div>
+    </div><!-- /.container -->
+  </div><!-- /.site -->
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.06039s from github-fe119-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-447ce66a36506ebddc8e84b4e32a77f6062f3d3482e77dd21a77a01f0643ad98.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github/index-96b16cf693b7545f39c5e743ae3031be16eac5c2e4959671e4ad8c063cf545de.js"></script>
+      
+      
+  </body>
+</html>
+

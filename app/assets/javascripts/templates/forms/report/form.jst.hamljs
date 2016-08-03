@@ -1,0 +1,10 @@
+.form{role:'form'}
+  .form-group
+    .input-group
+      .h2 Report:
+      %textarea{name:'body', cols:'68', rows:'5', autofocus:'true', placeholder:'exactly five sentences', requiered:'true'}
+
+  .form-group
+    .input-group
+      .input-group-addon Date:
+      %input.form-control{name:'created_at', type:'text'}

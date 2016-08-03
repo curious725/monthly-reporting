@@ -1,0 +1,213 @@
+// = require_tree .
+// = require bootstrap-table
+// = require bootstrap-datepicker3
+// = require_self
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+
+// Colors
+$planned-vacation: #0a0;
+$unpaid-vacation: #4b0082;
+$sickness-vacation: #f00;
+$weekend: #ddd;
+$holiday: #868686;
+$silver: #c0c0c0;
+
+section {
+  margin-top: 70px;
+}
+
+textarea {
+  resize: none;
+}
+
+.footer {
+  margin: 0 auto;
+}
+
+#time-table {
+  border-collapse: collapse;
+  float: left;
+
+  td {
+    border-style: solid;
+    border-width: 1px;
+    height: 21px;
+    width: 20px;
+  }
+
+  .months {
+    td {
+      border-color: $gray-light;
+      text-align: center;
+    }
+  }
+
+  .weeks {
+    td {
+      border-color: $gray-light;
+      text-align: center;
+    }
+  }
+
+  .days {
+    td {
+      border-color: $gray-light;
+      border-left-style: solid;
+      border-right-style: solid;
+      border-top-style: solid;
+      border-width: 1px;
+      text-align: center;
+    }
+  }
+}
+
+.scroll-x {
+  overflow-x: scroll;
+}
+
+.members {
+  border-collapse: collapse;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1;
+  float: right;
+
+  tr {
+    height: 20px;
+  }
+
+  .member {
+    border-bottom: solid;
+    border-color: $gray-lighter;
+    border-width: 1px;
+    text-align: right;
+  }
+}
+
+.time-table-by-day,
+.time-table-by-week {
+  border-collapse: collapse;
+
+  .head {
+    td {
+      border: 1px solid;
+      text-align: center;
+    }
+  }
+
+  td {
+    border-bottom: solid;
+    border-left-color: $silver;
+    border-left-style: solid;
+    border-top: solid;
+    border-width: 1px;
+    height: 21px;
+    width: 20px;
+  }
+
+  .left-cell {
+    border-left-style: solid;
+    border-width: 1px;
+  }
+
+  .right-cell {
+    border-right-style: solid;
+    border-width: 1px;
+  }
+}
+
+.requested {
+  background-image: repeating-linear-gradient(
+      45deg,
+      transparent,
+      $gray-lighter 25%,
+      transparent 50%
+    );
+}
+
+.accepted {
+  background-image: repeating-linear-gradient(
+      transparent,
+      $gray-lighter 210%
+    );
+}
+
+.inprogress {
+  background-image: repeating-linear-gradient(
+      transparent,
+      $gray-lighter 25%,
+      transparent 50%
+    );
+}
+
+.used {
+  opacity: 0.25
+}
+
+.planned {
+  background-color: $planned-vacation;
+}
+
+.unpaid {
+  background-color: $unpaid-vacation;
+}
+
+.sickness {
+  background-color: $sickness-vacation;
+}
+
+.weekend {
+  background-color: $weekend;
+}
+
+.holiday {
+  color: $holiday;
+  text-align: center;
+}
+
+.time-table-content {
+  form {
+    margin-bottom: 10px;
+  }
+
+  .input-group {
+    padding-left: 5px;
+  }
+}
+
+.legend {
+  th {
+    text-align: center;
+  }
+  td {
+    border-bottom: solid;
+    border-left-color: $silver;
+    border-left-style: solid;
+    border-top: solid;
+    border-width: 1px;
+    height: 21px;
+    text-align: right;
+    width: 20px;
+  }
+  .description {
+    width: auto;
+  }
+}
+
+.buttons {
+  .btn {
+    margin-left: 5px;
+  }
+}
+
+.time-tables {
+  .time-table {
+    margin-bottom: 25px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}

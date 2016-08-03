@@ -1,0 +1,6 @@
+.panel.panel-primary
+  .panel-heading Table of Reports
+  .panel-body
+    .reportsTableToolbar
+      %button.btn.btn-primary{name:'add'} Add New Report
+    %table.table.table-condesed.reports

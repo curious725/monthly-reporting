@@ -1,0 +1,4 @@
+.panel.panel-primary
+  .panel-heading Requests to Approve
+  .panel-body
+    %table.table.table-condensed

@@ -1,0 +1,5 @@
+.new-report-form
+.panel.panel-primary
+  .panel-heading Reports
+  .panel-body
+    .panel-group

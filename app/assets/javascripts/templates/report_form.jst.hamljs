@@ -1,0 +1,9 @@
+.panel.panel-primary
+  .panel-heading Create New Report
+  .panel-body
+    .form.report-create{role:'form'}
+      .input-group
+        %input.form-control{name:'new-report-body', type:'text', placeholder:'Write a report', autofocus:true}
+        .input-group-btn
+          %button.btn.btn-default{name:'clear'} Clear
+          %button.btn.btn-success{name:'create'} Create

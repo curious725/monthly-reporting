@@ -1,0 +1,24 @@
+While not mandatory, it is highly recommended that you set a password   │   
+  │ for the MySQL administrative "root" user.                               │   
+  │                                                                         │   
+  │ If this field is left blank, the password will not be changed.          │   
+  │                                                                         │   
+  │ New password for the MySQL "root" user:   
+////*
+8c2a1bf41970d62123527598aa710b4160b35e163f864f5e4e8fc1719d22965be0505dfc57d435481a036676350598c373e80df0874d726fb48eb96fa971028d
+(rake secret)
+*////
+NEW PASSWORD FOR ROOT: password
+
+CREATE NEW USER in MYSQL: maria
+PASSWORD FOR NEW USER: mpassword
+
+export SECRET_TOKEN=
+45eebfc8d93b6bf1a437b9e7b4388eadfe57c6406b5ead1e4fd0edce8932a63f413643cc52f175b83b9be223220ef57a4e752c55763fa92190cd55b6fb1f9dff
+
+export SECRET_KEY_BASE=
+3efcc6c0e4b55bd8370d26a18c1ece1795fc2445ce1fb44354e76a71ca8154b1853399fc61bb65bf18e91ce10aaaaa0c75ff2ef4eeca32989e3ddb02bbf661ee
+////*
+DATABASE_USER=MARIA
+DATABASE_PASS=8c2a1bf41970d62123527598aa710b4160b35e163f864f5e4e8fc1719d22965be0505dfc57d435481a036676350598c373e80df0874d726fb48eb96fa971028d
+*////

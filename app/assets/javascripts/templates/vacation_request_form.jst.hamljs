@@ -1,0 +1,18 @@
+.form.form-inline{role:'form'}
+  .col-md-5
+    .btn-group{data-toggle:'buttons'}
+      :each item in availableVacations
+        .btn.btn-default
+          %input{type:'radio', name:'vacation-type', value:item.attributes.kind}
+          #{item.attributes.kind} &nbsp;
+          .badge{class:item.attributes.kind}= item.attributes.available_days
+  .col-md-4
+    .input-group.input-daterange
+      %input.form-control{type:'text', name:'from', title:'Start date'}
+      .input-group-addon to
+      %input.form-control{type:'text', name:'to',   title:'End date'}
+  .col-md-3
+    .pull-right
+      .btn-group
+        %button.btn.btn-default{name:'clear'}   Clear form
+        %button.btn.btn-default{name:'request'} Request

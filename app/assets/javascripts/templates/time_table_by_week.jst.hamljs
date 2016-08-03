@@ -1,0 +1,7 @@
+.col-md-2
+  %table.members
+    %tbody
+
+.scroll-x
+  %table.time-table-by-week
+    %tbody

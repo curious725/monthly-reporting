@@ -1,0 +1,18 @@
+%form.form-inline.clearfix
+  .pull-right
+    .col-md-8
+      .input-group.input-daterange
+        %input.form-control{type:'text', name:'from', value: from, title:'Date of the holiday start'}
+        .input-group-addon to
+        %input.form-control{type:'text', name:'to',   value: to,   title:'Date of the holiday end'}
+    .col-md-4
+      .input-group
+        %label.input-group-addon{for:'view-type'} View by:
+        %select.form-control{name:'view-type'}
+          :if viewType === 'day'
+            %option{value:'day', selected:true} day
+            %option{value:'week'} week
+          :if viewType === 'week'
+            %option{value:'day'} day
+            %option{value:'week', selected:true} week
+.time-tables

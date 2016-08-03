@@ -1,0 +1,6 @@
+.panel.panel-primary
+  .panel-heading Users
+  .panel-body
+    .usersTableToolbar
+      %button.btn.btn-primary{name:'add'} Add New User
+    %table.table.table-condesed.users

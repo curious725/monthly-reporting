@@ -1,0 +1,5 @@
+.new-team-form
+.panel.panel-primary
+  .panel-heading Teams
+  .panel-body
+    .panel-group

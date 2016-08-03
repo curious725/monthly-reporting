@@ -1,0 +1,59 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %title CyberVacations
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+    - unless current_user.nil?
+      :javascript
+        window.App.currentUser = new App.Models.CurrentUser(
+          #{raw(current_user.to_json(only: [:id,:first_name,:last_name]))}
+        );
+        window.App.currentUserRoles = new App.Collections.CurrentUserRoles(#{raw(current_user.team_roles.to_json(only: [:id,:role,:team_id]))});
+    = csrf_meta_tags
+  %body
+    %header
+      %nav.navbar.navbar-default.navbar-fixed-top
+        .container
+          .navbar-header
+            %button.navbar-toggle.collapsed{"aria-controls" => "navbar", "aria-expanded" => "false", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+              %span.sr-only Toggle navigation
+              %span.icon-bar
+              %span.icon-bar
+              %span.icon-bar
+            %a.navbar-brand{:href => "/#dashboard"} CyberCraft Vacations
+          #navbar.navbar-collapse.collapse
+            %ul.nav.navbar-nav.navbar-left
+              - if current_user && (current_user.manager? || current_user.member? || current_user.guest?)
+                %li
+                  = link_to "Dashboard", '/#dashboard'
+              - if current_user && (current_user.admin? || current_user.member?)
+                %li
+                  = link_to "Vacations", '/#vacations'
+                %li
+                  = link_to "Reports", '/#reports'
+              - if current_user
+                %li
+                  = link_to "Holidays", '/#holidays'
+              - if current_user && current_user.admin?
+                %li
+                  = link_to "Teams", '/#teams'
+                %li
+                  = link_to "Users", '/#users'
+            %ul.nav.navbar-nav.navbar-right
+              %li
+                - if user_signed_in?
+                  = link_to "Sign out (#{current_user.full_name}, #{current_user.email})", destroy_user_session_path, method: :delete
+                - else
+                  = link_to "Sign in", new_user_session_path
+    .container
+      .col-md-12
+        %section
+          %p.notice= notice
+          %p.alert= alert
+          = yield
+        %footer
+          © 2015 CyberCraft Inc.

@@ -1,0 +1,8 @@
+%td
+  = start
+  &nbsp;&mdash;&nbsp;
+  = finish
+%td
+  = status
+%td
+  %a.details{href:ref} Details

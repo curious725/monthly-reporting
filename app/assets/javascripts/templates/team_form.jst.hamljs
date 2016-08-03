@@ -1,0 +1,9 @@
+.panel.panel-primary
+  .panel-heading Create New Team
+  .panel-body
+    .form.team-create{role:'form'}
+      .input-group
+        %input.form-control{name:'new-team-name', type:'text', placeholder:'Team name...', autofocus:true}
+        .input-group-btn
+          %button.btn.btn-default{name:'clear'} Clear
+          %button.btn.btn-success{name:'create'} Create
