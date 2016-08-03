@@ -16,4 +16,9 @@ class Report < ActiveRecord::Base
   		end
   	end
   end
+
+  def self.test
+    p 'test passed, dude'
+  end
+
 end
