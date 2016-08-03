@@ -13,6 +13,7 @@ class ReportsController < ApplicationController
   def download_report
     respond_to do |format|
       format.json { render json: current_user.reports.to_a }
+      format.csv { render text: Report.to_csv(current_user.id) }
     end
   end
 
