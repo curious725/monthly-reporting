@@ -62,5 +62,6 @@ Rails.application.routes.draw do
             defaults: { format: :json }
   
   get 'download_reports' => 'reports#download_reports'
+  get 'download_report' => 'reports#download_report'
             
 end
