@@ -1,7 +1,7 @@
 
 require 'clockwork'
-require_relative './config/boot'
-require_relative './config/environment'
+require_relative '../../config/boot'
+require_relative '../../config/environment'
 
 module Clockwork
   handler do |job|
@@ -12,5 +12,5 @@ module Clockwork
   end
 
   every(10.seconds, 'Run bg job')
-  
+
 end
