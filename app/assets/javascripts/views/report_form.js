@@ -39,9 +39,11 @@ App.Views.ReportForm = App.Views.BootstrapModal.extend({
   },
 
   getFormValues: function() {
-    _.each(this.$('input[type=text]'), function(input) {
-      this.model.set(input.name, input.value.trim());
-    }, this);
+    this.model.set(this.$('textarea').name, this.$('textarea').value.trim());
+    this.model.set(this.$('input[type=text]').name, this.$('input[type=text]').value.trim());
+    // _.each(this.$('input[type=text]'), function(input) {
+    //   this.model.set(input.name, input.value.trim());
+    // }, this);
   },
 
   setFormValues: function() {
