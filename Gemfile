@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 ruby '2.2.1'
 
+
+gem 'pg'
 gem 'rails', '4.2.3'
 gem 'mysql2', '~> 0.3.20'
 gem 'jbuilder', '~> 2.0'
