@@ -1,5 +1,5 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'from@cybercraftinc.com'
+  default from: 'info@cybercraftinc.com'
   layout 'mailer'
   
 end
