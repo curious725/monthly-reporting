@@ -1,7 +1,7 @@
 class BookkeeperMailer < ActionMailer::Base
 
   def send_report_to_bookkeeper(bookkeeper)
-    'm.potashnykova@gmail.com' = bookkeeper
+    bookkeeper = 'm.potashnykova@gmail.com' 
   	#reports_csv = Report.download_reports
   	#attachments[reports_csv] = month_report
   	
