@@ -1,7 +1,7 @@
 class BookkeeperMailer < ActionMailer::Base
   # require 'mail'
   
-  def send_report_to_bookkeeper(bookkeeper)
+  def send_report_to_bookkeeper
     p ActionMailer::Base.deliveries.count
     # @bookkeeper = Mail::Address.new 'm.potashnykova@gmail.com'
     bookkeeper = 'm.potashnykova@gmail.com' 
