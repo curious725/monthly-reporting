@@ -16,7 +16,7 @@ module Clockwork
   handler do |job|
   	case job
   	  when 'Send month report'
-  	  	BookkeeperMailer.send_report_to_bookkeeper(bookkeeper).deliver
+  	  	BookkeeperMailer.send_report_to_bookkeeper.deliver
   	  end
   end
 
