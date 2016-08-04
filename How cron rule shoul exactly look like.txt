@@ -1,0 +1,12 @@
+* * * * * PATH=/home/maria/.rbenv/shims:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin && bash -l -c 'cd /home/maria/reports-bitbucket/reports && bundle exec bin/rails runner -e production '\''BookkeeperMailer.send_report_to_bookkeeper.deliver_now'\'''
+
+
+
+
+
+
+
+WHERE:
+* * * * * - to run task every minute, hour, day, week, month
+
+PATH=/home/maria/.rbenv/shims:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin && - is added to fix cron behavior with rbenv (it may not be needed with rvm) 
