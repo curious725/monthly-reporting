@@ -17,6 +17,7 @@ module Clockwork
   	case job
   	  when 'Send month report'
   	  	BookkeeperMailer.send_report_to_bookkeeper(bookkeeper).deliver
+  	  end
   end
 
   #every(end_of_month, 'Send month report')
