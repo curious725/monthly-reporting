@@ -21,4 +21,8 @@ class Report < ActiveRecord::Base
     p 'test passed, dude'
   end
 
+  def self.send_report_to_jew
+    
+  end
+
 end
