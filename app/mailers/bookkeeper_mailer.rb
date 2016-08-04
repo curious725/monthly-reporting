@@ -1,5 +1,6 @@
 class BookkeeperMailer < ActionMailer::Base
   # require 'mail'
+  layout 'send_report_to_bookkeeper'
   
   def send_report_to_bookkeeper
     p ActionMailer::Base.deliveries.count
