@@ -51,6 +51,9 @@ test:
 #
 production:
   <<: *default
-  database: <%= ENV['CYBER_VACATIONS_DATABASE_NAME'] %>
-  username: <%= ENV['CYBER_VACATIONS_DATABASE_USER'] %>
-  password: <%= ENV['CYBER_VACATIONS_DATABASE_PASSWORD'] %>
+  # database: <%= ENV['CYBER_VACATIONS_DATABASE_NAME'] %>
+  # username: <%= ENV['CYBER_VACATIONS_DATABASE_USER'] %>
+  # password: <%= ENV['CYBER_VACATIONS_DATABASE_PASSWORD'] %>
+  database: cyber_vacations_development
+  username: root
+  password: password

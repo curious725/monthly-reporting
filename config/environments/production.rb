@@ -18,11 +18,13 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     tls: true,
-    address:              'smtp.yandex.ru',
+    address:              'smtp.yandex.ru', #spamed for every minute 
     port:                 465,
     domain:               'yandex.ru',
-    user_name:            'testcybermail',#Rails.application.secrets[:email_user],
-    password:             'password1888',#Rails.application.secrets[:email_pass],
+    user_name:            'cool.martin-borman',
+    password:             'porol1488',
+    #user_name:            'testcybermail',#Rails.application.secrets[:email_user],
+    #password:             'password1888',#Rails.application.secrets[:email_pass],
     authentication:       :plain
   }
 
