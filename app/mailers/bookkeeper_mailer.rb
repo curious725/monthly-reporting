@@ -3,13 +3,13 @@ class BookkeeperMailer < ActionMailer::Base
   default from: 'testcybermail@yandex.ru'
   layout 'send_report_to_bookkeeper'
   
-  def send_report_to_bookkeeper
-    p ActionMailer::Base.deliveries.count
-    # @bookkeeper = Mail::Address.new 'm.potashnykova@gmail.com'
-    bookkeeper = 'es@cybercraftinc.com'
-    # @bookkeeper = bookkeeper
-  	#reports_csv = Report.download_reports
-  	#attachments[reports_csv] = month_report
+   def send_report_to_bookkeeper
+     p ActionMailer::Base.deliveries.count
+     # @bookkeeper = Mail::Address.new 'm.potashnykova@gmail.com'
+     bookkeeper = 'm.potashnykova@gmail.com'
+     # @bookkeeper = bookkeeper
+    #reports_csv = Report.download_reports
+    #attachments[reports_csv] = month_report
   	
   	mail(to: bookkeeper, subject: 'Cybercraft month report')
    #   do |format|
