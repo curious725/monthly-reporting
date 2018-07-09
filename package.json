@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/curious725/monthly-reporting#readme",
   "dependencies": {
-    "karma": "^2.0.4"
+    "karma": "^2.0.4",
+    "jasmine-core": "2.3.0"
   }
 }
