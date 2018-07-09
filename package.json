@@ -1,0 +1,23 @@
+{
+  "name": "monthly-reporting",
+  "version": "1.0.0",
+  "description": "This is implementation of the **Second Iteration**.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/curious725/monthly-reporting.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/curious725/monthly-reporting/issues"
+  },
+  "homepage": "https://github.com/curious725/monthly-reporting#readme"
+}
