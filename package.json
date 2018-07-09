@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/curious725/monthly-reporting/issues"
   },
-  "homepage": "https://github.com/curious725/monthly-reporting#readme"
+  "homepage": "https://github.com/curious725/monthly-reporting#readme",
+  "dependencies": {
+    "karma": "^2.0.4"
+  }
 }
