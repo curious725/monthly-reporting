@@ -23,6 +23,8 @@
   "dependencies": {
     "jasmine-core": "2.3.0",
     "karma": "^2.0.4",
-    "karma-jasmine": "^1.1.2"
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-jasmine": "^1.1.2",
+    "karma-phantomjs-launcher": "^1.0.4"
   }
 }
